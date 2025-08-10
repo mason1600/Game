@@ -1179,6 +1179,126 @@ read qqq
     exit
     ;;
     esac
+	
+	cat << EOF
+
+$BOBS_HEALTH mana
+$COIN coins                -X- sun                     
+                                      
+    o                   c   chest            
+   -X-                j---j                   
+....t..................---.................
+whats this ? oh a treasure chest i think?
+should i open it?yes or no?
+EOF
+read rrr
+if [ $rrr == yes ]; then
+((COIN += 1))
+((BOBS_HEALTH += 1))
+cat << EOF
+
+$BOBS_HEALTH mana
+$COIN coins                -X- sun                     
+                                      
+                      o   - chest open            
+                     -X- i@ -j                   
+.............. .......t.---.................
+its seems there is a coin and a crunchy pickle inside
+i will take the coin and crunch the pickle
+EOF
+read pauseagin
+elif [ $rrr == no ]; then 
+animation
+else echo "no not a proper command"
+read ggg
+exit
+fi
+
+cat << EOF
+              @
+             @@@
+     o        q
+    -X-       q
+.....t........q.............
+$BOBS_HEALTH mana
+$COIN coins
+a small tree grows near by but it seems taller this time
+EOF
+read sss
+
+cat << EOF        
+............................                              
+             .. . .  .  . .    
+      o    . .<-left right->or forward          
+     -X- . .  . . .  .   .     
+......t......................
+$BOBS_HEALTH mana
+$COIN coins
+you come to a crossroads given a choice left right or forward
+
+EOF
+read ttt
+if [ $ttt == forward ]; then
+((BOBS_HEALTH -= 30))
+cat << EOF 
+....         ...................    .....
+..... xxxxx....................... x......
+.....  xxxx....xxxxxxx..... xx.......   ..
+..................................xxxx......
+..o..ouch...pitfalls.............xxxxx.......
+.-X-....... xxxx..... xxxxxx.................
+..t..  xxxxx ................................
+$BOBS_HEALTH mana
+$COIN coins
+you fall into a pitfall and take substantial damage
+EOF
+read uuu
+elif [ $ttt == right ]; then
+((BOBS_HEALTH += 4))
+((COIN += 1))
+cat << EOF 
+..............................................
+           xxxx                                 
+            i <-tree                  @  <-coin            
+            i                                  
+                                            
+     o                           q qqq             
+    -X-                          qqq   <-veggies            
+.....t...........................................
+$BOBS_HEALTH mana
+$COIN coins
+you go down a nice path and find fresh veggies and a coin
+EOF
+read vvv
+elif [ $ttt == left ];  then
+cat << EOF
+...............................................
+
+      o -...> theres nothing here
+     -X-
+      t
+                          
+$BOBS_HEALTH mana
+$COIN coins
+                      
+...............................................
+its just a empty path? ugh sigh...
+EOF
+read www
+else echo "invalid choice you lose"
+read xxx
+exit
+fi
+#check for death
+if [ $BOBS_HEALTH -lt 1 ]; then
+echo "this is the end you have died"
+read dedededededed
+exit
+#move on if still alive
+else echo "still alive woot"
+fi
+animation
+
 }
 level6
 echo "end of game so far enter will close"
