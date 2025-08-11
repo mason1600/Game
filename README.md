@@ -1,3 +1,3 @@
-Just play and see, I hope you enjoy bash games.
+Just Play And See, I Hope You Enjoy Bash Games.
 
-I will do my best to update the adventure length every few days. 
+I Will Do My Best To Update The Adventure Length Every Few Days. 
