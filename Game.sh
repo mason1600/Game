@@ -1298,11 +1298,37 @@ exit
 else echo "still alive woot"
 fi
 animation
+cat << EOF
+              @
+             @@@
+              q
+     o        q
+    -X-       q
+.....t........q.............
+$BOBS_HEALTH mana
+$COIN coins
+a small tree grows near by but it seems even taller this time?
+wait a minute i think i see something up there..
+EOF
+read yyy
+cat << EOF
+              @
+             @@@
+              q
+              q
+ hmmm..    o  q
+          -X- q
+...........t..q.............
+$BOBS_HEALTH mana
+$COIN coins
+i am not really sure how i could get up there?
+EOF
+read zzz
 
 }
 level6
+
 echo "end of game so far enter will close"
 read eightteenth
 
 exit
-
