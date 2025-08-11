@@ -1,9 +1,10 @@
 #!/bin/bash
 
+# This variable is created with a value of 99 for bobs health
 BOBS_HEALTH=99
-	   COIN=1
+# This variable is created with a value of 1 for bobs coins to be collected	   
+COIN=1
 #intro for game
-
 cat << EOF
 		-x-
 this is bob
@@ -12,7 +13,9 @@ this is bob
   t
 bob is on an adventure
 EOF
+# Echo command informs user that hitting enter will move on if no selection is given
 echo "hitting enter moves on if no selection"
+# Read command used to hold user till press of enter
 read first
 cat << EOF
 
