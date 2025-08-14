@@ -1327,7 +1327,66 @@ $COIN coins
 i am not really sure how i could get up there?
 EOF
 read zzz
+cat << EOF
+              @
+             @@@
+              q
+              q
+              q     o to tall....
+              q    -X-
+........... ..q.....t.......
+$BOBS_HEALTH mana
+$COIN coins
+oh well maybe another time
+EOF
+read aaaa
+animation
+cat << EOF
 
+$BOBS_HEALTH mana
+$COIN coins                -X- sun                     
+                                      
+    o                   c   chest            
+   -X-                j---j                   
+....t..................---.................
+whats this ? oh a treasure chest i think?
+should i open it?yes or no?
+EOF
+read bbbb
+if [ $bbbb == yes ]; then
+((COIN += 1))
+((BOBS_HEALTH += 2))
+cat << EOF
+
+$BOBS_HEALTH mana
+$COIN coins                -X- sun                     
+                                      
+  sic its a burger    o   - chest open            
+                     -X- @@ -j                   
+.............. .......t.---.................
+its seems there is a coin and a juicy Burger
+i will take the coin and demolish this burg
+EOF
+read pausaginn
+elif [ $bbbb == no ]; then 
+animation
+else echo "no not a proper command"
+read cccc
+exit
+fi
+cat << EOF 
+                           ..       
+                          ....       
+            creature-->%j......       
+  0                  **,,,......             
+ -X-                  ...........                
+  t                  ..............              
+..................................
+its that weird pile of hay again better stay back.. 
+$BOBS_HEALTH mana
+$COIN coins
+EOF
+read dddd
 }
 level6
 
