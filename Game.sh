@@ -174,7 +174,11 @@ EOF
 sleep .5
 }
 animation
-
+# This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
+# This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
 
 cat << EOF
          o              tttt         
@@ -197,7 +201,11 @@ nice he recoverd woot
 EOF
 read extra
 animation
-
+# This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
+# This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
 cat << EOF
          o               o 
         -X-             -X-
@@ -236,6 +244,11 @@ $BOBS_HEALTH mana
 EOF
 read seventh
 animation
+# This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
+# This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
 #end of level two
 }
 level2
@@ -329,6 +342,11 @@ we now continue on our path to whereever we are going-->
 EOF
 read eleventh
 animation
+# This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
+# This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
 cat << EOF        
                           
       o                  
@@ -341,6 +359,11 @@ hey you found your first coin woot
 EOF
 read thirteenth
 animation
+# This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
+# This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
 cat << EOF        
                   @<--fruit           
       o      t i tt         
@@ -388,6 +411,11 @@ it was extremly toxic if you ate it other wise hunger takes 1 health anyway
 EOF
 read fiveteen
 animation
+# This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
+# This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
 #end of level 3
 }
 level3
@@ -423,6 +451,11 @@ the rain is clean and good and gives you 3 health nice woot
 EOF
 read nineteenth
 animation
+# This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
+# This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
 cat << EOF        
 ............................                              
              .. . .  .  . .    
@@ -495,6 +528,11 @@ exit
 else echo "still alive woot"
 fi
 animation
+# This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
+# This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
 cat << EOF
 
 $BOBS_HEALTH mana
@@ -524,11 +562,21 @@ EOF
 read ff
 elif [ $ee == no ]; then 
 animation
+# This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
+# This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
 else echo "no not a proper command"
 read ff
 exit
 fi
 animation
+# This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
+# This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
 cat << EOF                                      
 $BOBS_HEALTH mana
 $COIN coins                                     
@@ -603,6 +651,11 @@ he dies quick must have been a noob with no hax
 EOF
 read ll
 animation
+# This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
+# This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
 cat << EOF        
 ............................                              
              .. . .  .  . .    
@@ -675,6 +728,11 @@ exit
 else echo "still alive woot"
 fi
 animation
+# This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
+# This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
 cat << EOF 
 
 $BOBS_HEALTH mana
@@ -732,6 +790,11 @@ it didnt look toxic? we will move on either way..
 EOF
 read mm
 animation
+# This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
+# This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
 }
 #this ends level four
 level4
@@ -742,6 +805,11 @@ read nn
 echo "BEGIN LEVEL 5"
 sleep 1
 animation
+# This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
+# This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
 cat << EOF        
           bird      --.----------.--                      
          -vv-         .   AAAAAA .    t   t         
@@ -754,6 +822,11 @@ whats this it looks like a cabin in the woods?
 EOF
 read oo
 animation
+# This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
+# This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
 cat << EOF        
           bird      --.----------.--                      
          -vv-         .   AAAAAA .    t   t         
@@ -781,6 +854,11 @@ EOF
 read rr
 elif [ $pp == no ]; then
 animation
+# This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
+# This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
 else
 echo "not a command you lose loser very unforgiving game"
 read qq
@@ -795,6 +873,11 @@ exit
 else echo "still alive woot"
 fi
 animation
+# This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
+# This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
 cat << EOF        
 ............................                              
              .. . .  .  . .    
@@ -867,6 +950,11 @@ exit
 else echo "still alive woot"
 fi
 animation
+# This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
+# This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
 cat << EOF
       o                   ..
      -X-                 ....
@@ -979,6 +1067,11 @@ we now continue on our path to whereever we are going-->
 EOF
 read eee
 animation
+# This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
+# This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
 ((COIN += 1))
 cat << EOF        
                           
@@ -992,6 +1085,11 @@ hey you found another coin awsome
 EOF
 read fff
 animation
+# This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
+# This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
 cat << EOF        
                   @<--fruit           
       o      t i tt         
@@ -1112,11 +1210,21 @@ he dies quick must have been a nUbZor lawl
 EOF
 read nnn
 animation
+# This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
+# This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
 echo "level five end"
 
 }
 level5
 animation
+# This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
+# This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
 echo "YOU HAVE NOW MADE IT TO LEVEL SIX"
 read ooo
 cat << EOF
@@ -1133,6 +1241,11 @@ read seventeen
 level6(){
 echo "begin level 6"
 animation
+# This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
+# This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
 cat << EOF
 
               @
@@ -1212,6 +1325,11 @@ EOF
 read pauseagin
 elif [ $rrr == no ]; then 
 animation
+# This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
+# This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
 else echo "no not a proper command"
 read ggg
 exit
@@ -1301,6 +1419,11 @@ exit
 else echo "still alive woot"
 fi
 animation
+# This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
+# This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
 cat << EOF
               @
              @@@
@@ -1341,6 +1464,11 @@ oh well maybe another time
 EOF
 read aaaa
 animation
+# This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
+# This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
 cat << EOF
 
 $BOBS_HEALTH mana
