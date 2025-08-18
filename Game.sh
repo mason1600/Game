@@ -1515,10 +1515,68 @@ $BOBS_HEALTH mana
 $COIN coins
 EOF
 read dddd
+echo "Level Six End"
+sleep .4
 }
 level6
+echo "YOU HAVE NOW MADE IT TO LEVEL SEVEN"
+read eeee
+level7(){
+animation
+# This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
+# This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
+cat << EOF
 
+$BOBS_HEALTH mana
+$COIN coins                -X- sun                     
+                                      
+    o                   c   chest            
+   -X-                j---j                   
+....t..................---.................
+whats this ? oh a treasure chest i think?
+should i open it?yes or no?
+EOF
+read ffff
+if [ $ffff == yes ]; then
+((BOBS_HEALTH -= 2))
+cat << EOF
+
+$BOBS_HEALTH mana
+$COIN coins                -X- sun                     
+                                      
+  ouch it was a bomb  o   - chest open            
+                     -X- -@ -j                   
+.............. .......t.---.................
+it was a small bomb only did 2 damage.
+EOF
+read pausaginnn
+elif [ $ffff == no ]; then 
+animation
+# This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
+# This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
+else echo "no not a proper command"
+read gggg
+exit
+fi
+#check for death
+if [ $BOBS_HEALTH -lt 1 ]; then
+echo "this is the end you have died"
+read dededededededed
+exit
+#move on if still alive
+else echo "still alive woot"
+fi
+
+}
+level7
 echo "end of game so far enter will close"
 read eightteenth
 
 exit
+
