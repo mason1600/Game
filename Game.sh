@@ -1572,11 +1572,117 @@ exit
 #move on if still alive
 else echo "still alive woot"
 fi
+animation2(){
+	cat << EOF
 
+   o
+  -X-
+...t....................
+EOF
+sleep .5
+        cat << EOF
+
+   o
+  -X-
+   t
+.......................
+EOF
+sleep .5
+        cat << EOF
+
+    o
+   -X-
+....t....................
+EOF
+sleep .5
+        cat << EOF
+
+     o
+    -X-
+.....t....................
+EOF
+sleep .5
+        cat << EOF
+     o
+    -X-
+     t
+..........................
+EOF
+sleep .5
+        cat << EOF
+      
+       o
+      -X-
+.......t..................
+EOF
+sleep .5
+        cat << EOF
+      
+        o
+       -X-
+........t..................
+EOF
+sleep .5
+        cat << EOF
+
+          o
+         -X-
+          t
+.......................
+EOF
+sleep .5
+        cat << EOF
+
+              o
+             -X-
+..............t.........
+EOF
+sleep .5
+        cat << EOF
+
+   o
+  -X-
+...t....................
+EOF
+sleep .5
+        cat << EOF
+
+   o
+  -X-
+   t
+.......................
+EOF
+sleep .5
+        cat << EOF
+
+    o
+   -X-
+....t....................
+EOF
+sleep .5
+}
+animation2
+animation2
+animation2
+# This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
+# This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
+cat << EOF
+              @
+             @@@
+     o        q    -v-bird
+    -X-       q
+.....t........q.............
+$BOBS_HEALTH mana
+$COIN coins
+i really feel like i am getting somewhere i swear
+EOF
+read hhhh
 }
 level7
 echo "end of game so far enter will close"
 read eightteenth
 
 exit
-
