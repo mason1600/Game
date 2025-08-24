@@ -1680,6 +1680,17 @@ $COIN coins
 i really feel like i am getting somewhere i swear
 EOF
 read hhhh
+cat << EOF        
+          bird      --.----------.--                      
+         -vv-         .   AAAAAA .    t   t         
+               o      .   A| |A  .    t  t       
+              -X-cabn>.   A| |A  .     tree <-         
+...............t..........A|.|A........t.......
+$BOBS_HEALTH mana
+$COIN coins
+Ah its this place, I have an Idea about that hole in the floor..
+EOF
+read iiii
 }
 level7
 echo "end of game so far enter will close"
