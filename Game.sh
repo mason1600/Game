@@ -1697,7 +1697,7 @@ cat << EOF
               inside  .   o      .    t  t       
                  cabn>.  -X-     .     tree <-         
 ..........................t|  |..........t.......
-$BOBS_HEALTH mana                     |  |
+$BOBS_HEALTH mana                      |  |
 $COIN coins                     |  |
 Alright, im inside, and i am goin deeper down in the hole..
 EOF
