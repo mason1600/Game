@@ -274,7 +274,7 @@ cat << EOF
       t                 BiiiiiB
 .........................iiiii.....
 $BOBS_HEALTH mana
-the tree grabs the bird eats it and spits out a apple do you eat it?
+the tree grabs the bird eats it and spits out a apple do you eat it? yes or no?
 EOF
 read NINTH
 #then using a if then else statement to check 
