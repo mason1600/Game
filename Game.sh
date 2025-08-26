@@ -1691,6 +1691,17 @@ $COIN coins
 Ah its this place, I have an Idea about that hole in the floor..
 EOF
 read iiii
+cat << EOF        
+          bird      --.----------.--                      
+         -vv-         .          .    t   t         
+              inside  .   o      .    t  t       
+                 cabn>.  -X-     .     tree <-         
+..........................t|  |..........t.......
+$BOBS_HEALTH mana          |  |
+$COIN coins                |  |
+Alright, im inside, and i am goin deeper down in the hole..
+EOF
+read jjjj
 }
 level7
 echo "end of game so far enter will close"
