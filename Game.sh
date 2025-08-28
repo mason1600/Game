@@ -1704,6 +1704,20 @@ $COIN coins
 Alright, im inside, and i am goin deeper down in the hole..
 EOF
 read jjjj
+cat << EOF
+...........................|  |..................
+     V       v             |  |   V      v
+     V <-stalagtight       |  |          v
+                           |  |
+   o                       |  |
+  -X-                      |  |      A <-stalagmight  
+...t.......................,,,,......A..............
+$BOBS_HEALTH mana
+$COIN coins
+Alright, im inside what looks like a cave of some sort...
+I was careful coming down this time so i did not take any damage..
+EOF
+read kkkk
 }
 level7
 echo "end of game so far enter will close"
