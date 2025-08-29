@@ -9,7 +9,7 @@ cat << EOF
 		-x-
 this is bob
   o
-- X-	bobs health..100mana
+- X -	bobs health..100mana
   t
 bob is on an adventure
 EOF
