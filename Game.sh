@@ -7,14 +7,14 @@ COIN=1
 #intro for game
 cat << EOF
 		-x-
-this is bob
+This Is Bob!!!
   o
-- X -	bobs health..100mana
+- X -	Bobs Health..100mana
   t
-bob is on an adventure
+Bob is on an Adventure!!
 EOF
 # Echo command informs user that hitting enter will move on if no selection is given
-echo "hitting enter moves on if no selection"
+echo "Hitting Enter Moves On IF NO Selection"
 # Read command used to hold user till press of enter
 read first
 cat << EOF
@@ -24,12 +24,12 @@ cat << EOF
 	matrix glitch
 	x
 	t
-ohhh bob got all messed up how can we fix this???
+Ohhh Bob got all messed up how can we fix this???
 EOF
 read second
 cat << EOF
 
-alright lets fix him 
+Alright lets fix him.
 EOF
 read secondsecond
 cat << EOF
@@ -38,7 +38,7 @@ cat << EOF
 	 o		mana 100
 	-X-
 	 t
-alright we fixed him health restored
+Alright. We fixed him. Health Restored!
 EOF
 read THIRD
 
@@ -50,11 +50,11 @@ level1(){
 
 cat << EOF
                 -x-
-this is bob
+This is bob.
   o
 - X -    bobs health.. $BOBS_HEALTH mana
   t
-you are now bob
+YOU are now bob!!
 EOF
 read fourth
 cat << EOF
@@ -77,7 +77,7 @@ level2(){
 	-X-
 	 t
 $BOBS_HEALTH mana
-you will need food to recover mana 
+You will need FOOD to recover mana. 
 EOF
 read extra
 
