@@ -187,7 +187,7 @@ cat << EOF
 .........................tt..................
 $BOBS_HEALTH mana
 
-type eat to eat apple from nearby tree to recover 1 mana
+Type eat to eat apple from nearby Tree to recover 1 mana.
 EOF
 
 read eat
