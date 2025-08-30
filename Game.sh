@@ -52,7 +52,7 @@ cat << EOF
                 -x-
 this is bob
   o
-- X-    bobs health.. $BOBS_HEALTH mana
+- X -    bobs health.. $BOBS_HEALTH mana
   t
 you are now bob
 EOF
