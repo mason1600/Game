@@ -59,7 +59,7 @@ EOF
 read fourth
 cat << EOF
                 
-this is bob
+ BOB
   o
 - X-    bobs health..$BOBS_HEALTH mana
   t
