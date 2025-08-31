@@ -1,10 +1,10 @@
 #!/bin/bash
 
-# This variable is created with a value of 99 for bobs health
+# This variable is created with a value of 99 for bobs health.
 BOBS_HEALTH=99
-# This variable is created with a value of 1 for bobs coins to be collected	   
+# This variable is created with a value of 1 for bobs coins to be collected.
 COIN=1
-#intro for game
+# Intro for game.
 cat << EOF
 		-x-
 This Is Bob!!!
@@ -13,9 +13,9 @@ This Is Bob!!!
   t
 Bob is on an Adventure!!
 EOF
-# Echo command informs user that hitting enter will move on if no selection is given
-echo "Hitting Enter Moves On IF NO Selection"
-# Read command used to hold user till press of enter
+# Echo command informs user that hitting enter will move on if no selection is given.
+echo "Hitting Enter Moves On IF NO Selection."
+# Read command used to hold user till press of enter.
 read first
 cat << EOF
 
@@ -42,9 +42,9 @@ Alright. We fixed him. Health Restored!
 EOF
 read THIRD
 
-#end of intro
+# End of intro.
 
-#first level of game introducing health 
+# First level of game introducing health.
 level1(){
 	 
 
@@ -65,11 +65,11 @@ cat << EOF
   t
 EOF
 }
-#end level of level one
+# End level of level one.
 level1
 echo "begin lvl 2"
 read fourth
-#this is the beginning of the second level
+# This is the beginning of the second level.
 level2(){
 
 	cat << EOF
@@ -81,7 +81,7 @@ You will need FOOD to recover mana.
 EOF
 read extra
 
-#this is the main moving animation for the game
+# This is the main moving animation for the game.
 
 animation(){
 	cat << EOF
