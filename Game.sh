@@ -211,7 +211,7 @@ cat << EOF
         -X-             -X-
          t              jj
 ..............................
-There is another human could be dangerous say hello?
+There is another Human could be Dangerous say Hello?
 EOF
 #this takes bobs health and subtracts a random number from 1-7
 ((BOBS_HEALTH-=$(($RANDOM % 7 + 1))))
@@ -223,8 +223,8 @@ cat << EOF
 ..............................
 
 $BOBS_HEALTH mana
-he was a bad guy it seems we had to kill him
-and now we have sustaianed damage
+He was a bad guy it seems we had to kill him
+and now we have sustaianed damage.
 EOF
 cat << EOF
       o
