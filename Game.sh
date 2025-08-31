@@ -197,7 +197,7 @@ read eat
         -X-
          t
 $((BOBS_HEALTH += 1)) mana
-nice he recoverd woot
+Nice He Recovered Woot!
 EOF
 read extra
 animation
@@ -211,7 +211,7 @@ cat << EOF
         -X-             -X-
          t              jj
 ..............................
-ther is another human could be dangerous say hello?
+There is another human could be dangerous say hello?
 EOF
 #this takes bobs health and subtracts a random number from 1-7
 ((BOBS_HEALTH-=$(($RANDOM % 7 + 1))))
