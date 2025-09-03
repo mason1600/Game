@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # The script Game.sh was created by mason1600 on GitHub released with the license GNU General Public License v3.0
+# This Bash Script Is A Work Of True Passion For My Love For Bash And Gaming, Enjoy.
 
 # This variable is created with a value of 99 for bobs health.
 BOBS_HEALTH=99
