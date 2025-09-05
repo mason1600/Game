@@ -1890,6 +1890,93 @@ else echo "still alive woot"
 fi
 }
 level7
+# Ends Level 7
+
+echo 'end of LeveL Seven7'
+read oooo
+
+echo 'I Hope You Are Feeling Great And Ready For LeveL 8Eight8'
+read pppp
+
+# Begins Level Eight8
+level8(){
+
+caveani
+# This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
+# This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
+
+cat << EOF
+...................................................
+     V       v                    V      v
+     V                            v
+                               
+                       o     
+                      -X-A     -0-<-weird creature     
+.......................t........j.....A..............
+$BOBS_HEALTH mana
+$COIN coins
+A Weird Creature Offers To Bring You Some Food For One Shiny Coin.
+Would You Like To Give A Coin For Some Food? yes or no?
+EOF
+read qqqq
+
+case $qqqq in
+    yes)
+        (( COIN -= 1 ))
+    (( BOBS_HEALTH += 10 ))
+cat << EOF
+...................................................
+     V       v                    V      v
+     V                            v
+                               
+                       o  nom nom   
+                      -X-A     -0-<-weird creature     
+.......................t........j.....A..............
+$BOBS_HEALTH mana
+$COIN coins
+Thats Much Better!
+EOF
+read rrrr
+        no)
+            caveani
+            # This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
+            # This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
+            read -t .1 -n 1 dummytrap
+            read -t .1 -n 1 dummytrap
+            read -t .1 -n 1 dummytrap
+        *)
+            echo 'You Failed To Type Properly The End'
+            read dethpaws
+            exit
+esac
+
+caveani
+# This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
+# This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
+
+cat << EOF
+...................................................
+     V       v                    V      v
+     V                            v
+                               
+                       o     
+                      -X-A           
+.......................t.............A..............
+$BOBS_HEALTH mana
+$COIN coins
+I Wonder What Other Weird Things Are Down Here?!
+EOF
+read ssss
+
+}
+level8
+
 echo "end of game so far enter will close"
 read eightteenth
 
