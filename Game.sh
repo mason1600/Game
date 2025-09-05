@@ -1973,7 +1973,41 @@ $COIN coins
 I Wonder What Other Weird Things Are Down Here?!
 EOF
 read ssss
+cat << EOF
+...................................................
+     V       v                    V      v
+     V       d<-water droplet            v
+                               
+                       o     
+                      -X-A           
+.......................t.............A..............
+$BOBS_HEALTH mana
+$COIN coins
+It Was Sure Nice Of That Creature To Offer Me Some Food.
+Hopefully Nothing Sinister Is Behind It.
+EOF
+read tttt
 
+caveani
+# This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
+# This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
+
+cat << EOF
+...................................................
+     V       v                    V      v
+     V                            v
+                               
+                       o     
+                      -X-A<-Crystal          
+.......................t.............A..............
+$BOBS_HEALTH mana
+$COIN coins
+Lets Just Hope This Crystal Does Not Go Out ha....
+EOF
+read uuuu
 }
 level8
 
