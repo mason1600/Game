@@ -1760,6 +1760,11 @@ EOF
 sleep .4
 }
 fall
+# This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
+# This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
 cat << EOF
 ...........................|  |..................
      V       v             |  |   V      v
@@ -1774,6 +1779,115 @@ Alright, im inside what looks like a cave of some sort...
 I was careful coming down this time so i did not take any damage..
 EOF
 read kkkk
+cat << EOF
+...................................................
+     V       v                    V      v
+     V                            v
+                               
+                       o    A<-Crystal Of Light
+                      -X-  VVV        A   
+.......................t....V.........A..............
+$BOBS_HEALTH mana
+$COIN coins
+Lucky That This Crystal Is Here Or I Would Not Be Able To See At All.
+I Guess I Will ConTinue Searching Down Here In This Cool Cave.
+EOF
+read llll
+cat << EOF
+...................................................
+     V       v                    V      v
+     V                            v
+                               
+                       o     <-Crystal Of Light
+                      -X-A VVV        A   
+.......................t....V.........A..............
+$BOBS_HEALTH mana
+$COIN coins
+I Broke A Peice Of The Crystal Off So I Can Continue To See Down Here.
+Great Idea Right lol...
+EOF
+read mmmm
+caveani(){
+cat << EOF
+...................................................
+     V       v                    V      v
+     V                            v
+                               
+                       o     
+                      -X-A           
+.......................t.............A..............
+EOF
+sleep .4
+cat << EOF
+...................................................
+     V       v                    V      v
+     V                            v
+                       o       
+                      -X-A   
+                       t            
+.....................................A..............
+EOF
+sleep .4
+cat << EOF
+...................................................
+     V       v                    V      v
+     V                            v
+                             
+                          o                         
+                         -X-A         
+..........................t...........A..............
+EOF
+sleep .4
+cat << EOF
+...................................................
+     V       v                    V      v
+     V                            v
+                          o   
+                         -X-A                         
+                          t         
+......................................A..............
+EOF
+sleep .4
+cat << EOF
+...................................................
+     V       v                    V      v
+     V                            v
+                             
+                               o                  
+                              -X-A   
+...............................t......A..............
+EOF
+sleep .4
+}
+caveani
+# This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
+# This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
+((BOBS_HEALTH -= 4 ))
+cat << EOF
+...................................................
+     V       v                    V      v
+     V                            v
+                               
+                       o     
+                      -X-A           
+.......................t.............A..............
+$BOBS_HEALTH mana
+$COIN coins
+Ugh...I Am Getting Hungry Mana Reserve Dropping..Gotta Figure Something Out.
+I Hope That Nothing Spooky Is Down Here Hiding In The Shadows..!
+EOF
+read nnnn
+#check for death
+if [ $BOBS_HEALTH -lt 1 ]; then
+echo "this is the end you have died"
+read dedededededededed
+exit
+#move on if still alive
+else echo "still alive woot"
+fi
 }
 level7
 echo "end of game so far enter will close"
