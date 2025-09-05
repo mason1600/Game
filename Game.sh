@@ -1940,6 +1940,7 @@ $COIN coins
 Thats Much Better!
 EOF
 read rrrr
+			;;
         no)
             caveani
             # This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
@@ -1947,10 +1948,12 @@ read rrrr
             read -t .1 -n 1 dummytrap
             read -t .1 -n 1 dummytrap
             read -t .1 -n 1 dummytrap
+			;;
         *)
             echo 'You Failed To Type Properly The End'
             read dethpaws
             exit
+			;;
 esac
 
 caveani
