@@ -2014,7 +2014,7 @@ read uuuu
 }
 level8
 
-echo "end of game so far enter will close"
+echo "End Of Game So Far Enter Will Close."
 read eightteenth
 
 exit
