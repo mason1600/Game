@@ -2172,6 +2172,25 @@ $COIN coins
 A Bat Just Flew Over My Head...
 EOF
 read vvvv
+caveani
+# This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
+# This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
+cat << EOF
+...................................................
+     V       v                    V      v
+     V                            v
+                               
+                       o     
+                      -X-A<-Crystal          
+.......................t.............A..............
+$BOBS_HEALTH mana
+$COIN coins
+Not Going To Lie That Freaked Me Out Ha....
+EOF
+read wwww
 }
 level8
 
