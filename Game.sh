@@ -758,27 +758,27 @@ $COIN coins
 there is a ded tree with one fruit left on it do you eat it? yes or no
 EOF
 read FOURTEENTH
-#then using a if then else statement to check 
+# Then using a if then else statement to check.
 if [[ $FOURTEENTH == yes ]]; then
-    # call it
+    # Call it.
    ((BOBS_HEALTH += 2))
 elif [[ $FOURTEENTH == no ]]; then
 ((BOBS_HEALTH -= 1))
 else
-    # Function does not exist, handle the situation (e.g., print an error)
+    # Function does not exist, handle the situation (e.g., print an error).
     echo "Error: $FOURTEENTH does not exist." "do to user error the app will close with press of enter"
-    #prints and error and holds user for them to read then closes with press of enter
+    # Prints and error and holds user for them to read then closes with press of enter.
     read error
-#another exit code
+# Another exit code.
     exit
-#ends the if statement by typing if backwards or fi
+# Ends the if statement by typing if backwards or fi.
 fi
-#check for death
+# Check for death.
 if [ $BOBS_HEALTH -lt 1 ]; then
 echo "this is the end you have died"
 read dededededed
 exit
-#move on if still alive
+# Move on if still alive.
 else echo "still alive woot"
 fi
 
@@ -800,9 +800,9 @@ read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
 }
-#this ends level four
+# This ends level four.
 level4
-#this begins level five
+# This begins level five.
 level5(){
 echo "CONGRATSULATIONS YOU MADE IT TO LEVEL FIVE"
 read nn
@@ -868,12 +868,12 @@ echo "not a command you lose loser very unforgiving game"
 read qq
 exit
 fi
-#check for death
+# Check for death.
 if [ $BOBS_HEALTH -lt 1 ]; then
 echo "this is the end you have died"
 read dededededed
 exit
-#move on if still alive
+# Move on if still alive.
 else echo "still alive woot"
 fi
 animation
@@ -945,12 +945,12 @@ else echo "invalid choice you lose"
 read bb
 exit
 fi
-#check for death
+# Check for death.
 if [ $BOBS_HEALTH -lt 1 ]; then
 echo "this is the end you have died"
 read dededededed
 exit
-#move on if still alive
+# Move on if still alive.
 else echo "still alive woot"
 fi
 animation
@@ -1005,7 +1005,7 @@ $COIN coins
 the tree seems to have fruit eat it yes or no?
 EOF
 read ccc
-#then using a if then else statement to check 
+# Then using a if then else statement to check.
 if [[ $ccc == yes ]]; then
     # call it
    ((BOBS_HEALTH += 1))
