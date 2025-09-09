@@ -216,7 +216,7 @@ cat << EOF
 ..............................
 There is another Human could be Dangerous say Hello?
 EOF
-#this takes bobs health and subtracts a random number from 1-7
+# This takes bobs health and subtracts a random number from 1-7.
 ((BOBS_HEALTH-=$(($RANDOM % 7 + 1))))
 read hi
 cat << EOF
@@ -255,7 +255,7 @@ read -t .1 -n 1 dummytrap
 #end of level two
 }
 level2
-#beginning of level three
+# Beginning of level three.
 level3(){
 
 
@@ -280,26 +280,27 @@ $BOBS_HEALTH mana
 the tree grabs the bird eats it and spits out a apple do you eat it? yes or no?
 EOF
 read NINTH
-#then using a if then else statement to check 
+# Then using a if then else statement to check.
 if [[ $NINTH == yes ]]; then
-    # call it
+    # Call it.
    ((BOBS_HEALTH += 1))
 elif [[ $NINTH == no ]]; then
 ((BOBS_HEALTH -= 2))
 else
-    # answer does not exist, handle the situation (e.g., print an error)
+    # Answer does not exist, handle the situation (e.g., print an error).
     echo "Error: $NINTH does not exist." "do to user error the app will close with press of enter"
-    #prints and error and holds user for them to read then closes with press of enter
+    # Prints and error and holds user for them to read then closes with press of enter.
     read error
-#another exit code
+# Another exit code.
     exit
-#ends the if statement by typing if backwards or fi
+# Ends the if statement by typing if backwards or fi.
 fi
-#after any time subtraction is used on bobs health must check for death
+# After any time subtraction is used on bobs health must check for death.
+# Less important at the beggining of the game, but need as you go deeper.
 if [ $BOBS_HEALTH -lt 1 ]; then
 echo "this is the end you have died"
 read dededededed
-#this will exit if they are dead
+# This will exit if they are dead.
 exit
 #else it will continue with woot
 else echo "still alive woot"
