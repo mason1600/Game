@@ -528,7 +528,7 @@ if [ $BOBS_HEALTH -lt 1 ]; then
 echo "this is the end you have died"
 read dededededed
 exit
-#move on if still alive
+# Move on if still alive.
 else echo "still alive woot"
 fi
 animation
@@ -614,12 +614,12 @@ prepare for battle
 he does damage
 EOF
 read ii
-#check for death
+# Check for death.
 if [ $BOBS_HEALTH -lt 1 ]; then
 echo "this is the end you have died"
 read dededededed
 exit
-#move on if still alive
+# Move on if still alive.
 else echo "still alive woot"
 fi
 cat << EOF                                      
@@ -723,12 +723,12 @@ else echo "invalid choice you lose"
 read bb
 exit
 fi
-#check for death
+# Check for death.
 if [ $BOBS_HEALTH -lt 1 ]; then
 echo "this is the end you have died"
 read dededededed
 exit
-#move on if still alive
+# Move on if still alive.
 else echo "still alive woot"
 fi
 animation
