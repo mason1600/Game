@@ -252,7 +252,7 @@ animation
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
-#end of level two
+# End of level two.
 }
 level2
 # Beginning of level three.
@@ -302,7 +302,7 @@ echo "this is the end you have died"
 read dededededed
 # This will exit if they are dead.
 exit
-#else it will continue with woot
+# Else it will continue with woot.
 else echo "still alive woot"
 fi
  
@@ -317,22 +317,22 @@ the result of either eating the apple or not is?good or bad.
 EOF
 
 read TENTH
-#then using a if then else statement to check
+# Then using a if then else statement to check.
 if [[ $TENTH == good ]]; then
-    #call it
+    # Call it.
     	echo "ya its YUM it grew from the finest dirts and herbs and minerls the earth could offer"
 sleep 2
 elif [[ $TENTH == bad ]]; then
 	echo "well you probly shuld have ate it then duhhh lol XD"
 sleep 2
 else
-    # answer does not exist, handle the situation (e.g., print an error)
+    # Answer does not exist, handle the situation (e.g., print an error).
     echo "Error: $TENTH does not exist." "do to user error the app will close with press of enter"
-    #prints and error and holds user for them to read then closes with press of enter
+    # Prints and error and holds user for them to read then closes with press of enter.
     read error2
-#another exit code
+# Another exit code.
     exit
-#ends the if statement by typing if backwards or fi
+# Ends the if statement by typing if backwards or fi.
 fi
 
 cat << EOF        
@@ -379,27 +379,27 @@ $COIN coins
 there is a ded tree with one fruit left on it do you eat it? yes or no
 EOF
 read FOURTEENTH
-#then using a if then else statement to check 
+# Then using a if then else statement to check.
 if [[ $FOURTEENTH == yes ]]; then
-    # call it
+    # Call it.
    ((BOBS_HEALTH -= 11))
 elif [[ $FOURTEENTH == no ]]; then
 ((BOBS_HEALTH -= 1))
 else
-    # Function does not exist, handle the situation (e.g., print an error)
+    # Function does not exist, handle the situation (e.g., print an error).
     echo "Error: $FOURTEENTH does not exist." "do to user error the app will close with press of enter"
-    #prints and error and holds user for them to read then closes with press of enter
+    # Prints and error and holds user for them to read then closes with press of enter.
     read error
-#another exit code
+# Another exit code.
     exit
-#ends the if statement by typing if backwards or fi
+# Ends the if statement by typing if backwards or fi.
 fi
-#check for death
+# Check for death.
 if [ $BOBS_HEALTH -lt 1 ]; then
 echo "this is the end you have died"
 read dededededed
 exit
-#move on if still alive
+# Move on if still alive.
 else echo "still alive woot"
 fi
 
@@ -420,12 +420,12 @@ animation
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
-#end of level 3
+# End of level 3.
 }
 level3
-#beginning of level 4
+# Beginning of level 4.
 echo "CONGRATS YOU MADE IT TO LEVEL 4"
-#waits for user input to move on to level 4 ,example enter.
+# Waits for user input to move on to level 4 ,example enter.
 read sixteen
 
 level4(){
@@ -523,7 +523,7 @@ else echo "invalid choice you lose"
 read bb
 exit
 fi
-#check for death
+# Check for death.
 if [ $BOBS_HEALTH -lt 1 ]; then
 echo "this is the end you have died"
 read dededededed
