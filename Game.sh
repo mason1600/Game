@@ -1007,26 +1007,26 @@ EOF
 read ccc
 # Then using a if then else statement to check.
 if [[ $ccc == yes ]]; then
-    # call it
+    # Call it.
    ((BOBS_HEALTH += 1))
 elif [[ $ccc == no ]]; then
 ((BOBS_HEALTH -= 2))
 else
-    # answer does not exist, handle the situation (e.g., print an error)
+    # Answer does not exist, handle the situation (e.g., print an error).
     echo "Error: $ccc does not exist." "do to user error the app will close with press of enter"
-    #prints and error and holds user for them to read then closes with press of enter
+    # Prints and error and holds user for them to read then closes with press of enter.
     read error3
-#another exit code
+# Another exit code.
     exit
-#ends the if statement by typing if backwards or fi
+# Ends the if statement by typing if backwards or fi.
 fi
-#after any time subtraction is used on bobs health must check for death
+# After any time subtraction is used on bobs health must check for death.
 if [ $BOBS_HEALTH -lt 1 ]; then
 echo "this is the end you have died"
 read dededededed
-#this will exit if they are dead
+# This will exit if they are dead.
 exit
-#else it will continue with woot
+# Else it will continue with woot.
 else echo "still alive woot"
 fi
  
@@ -1042,22 +1042,22 @@ the result of either eating the apple or not is?good or bad.
 EOF
 
 read ddd
-#then using a if then else statement to check
+# Then using a if then else statement to check.
 if [[ $ddd == good ]]; then
-    #call it
+    # Call it.
     	echo "ya its YUM it grew from the finest dirts and herbs and minerls the earth could offer"
 sleep 2
 elif [[ $ddd == bad ]]; then
 	echo "well you probly shuld have ate it then duhhh lol XD"
 sleep 2
 else
-    # answer does not exist, handle the situation (e.g., print an error)
+    # Answer does not exist, handle the situation (e.g., print an error).
     echo "Error: $ddd does not exist." "do to user error the app will close with press of enter"
-    #prints and error and holds user for them to read then closes with press of enter
+    # Prints and error and holds user for them to read then closes with press of enter.
     read error4
-#another exit code
+# Another exit code.
     exit
-#ends the if statement by typing if backwards or fi
+# Ends the if statement by typing if backwards or fi.
 fi
 
 cat << EOF        
@@ -1105,27 +1105,27 @@ $COIN coins
 there is a ded tree with one fruit left on it do you eat it? yes or no
 EOF
 read ggg
-#then using a if then else statement to check 
+# Then using a if then else statement to check.
 if [[ $ggg == yes ]]; then
-    # call it
+    # Call it.
    ((BOBS_HEALTH -= 11))
 elif [[ $ggg == no ]]; then
 ((BOBS_HEALTH -= 1))
 else
-    # Function does not exist, handle the situation (e.g., print an error)
+    # Function does not exist, handle the situation (e.g., print an error).
     echo "Error: $ggg does not exist." "do to user error the app will close with press of enter"
-    #prints and error and holds user for them to read then closes with press of enter
+    # Prints and error and holds user for them to read then closes with press of enter.
     read error5
-#another exit code
+# Another exit code.
     exit
-#ends the if statement by typing if backwards or fi
+# Ends the if statement by typing if backwards or fi.
 fi
-#check for death
+# Check for death.
 if [ $BOBS_HEALTH -lt 1 ]; then
 echo "this is the end you have died"
 read dededededed
 exit
-#move on if still alive
+# Move on if still alive.
 else echo "still alive woot"
 fi
 
@@ -1173,12 +1173,12 @@ prepare for battle
 he does damage
 EOF
 read kkk
-#check for death
+# Check for death.
 if [ $BOBS_HEALTH -lt 1 ]; then
 echo "this is the end you have died"
 read dededededed
 exit
-#move on if still alive
+# Move on if still alive.
 else echo "still alive woot"
 fi
 cat << EOF                                      
@@ -1414,12 +1414,12 @@ else echo "invalid choice you lose"
 read xxx
 exit
 fi
-#check for death
+# Check for death.
 if [ $BOBS_HEALTH -lt 1 ]; then
 echo "this is the end you have died"
 read dedededededed
 exit
-#move on if still alive
+# Move on if still alive.
 else echo "still alive woot"
 fi
 animation
@@ -1568,12 +1568,12 @@ else echo "no not a proper command"
 read gggg
 exit
 fi
-#check for death
+# Check for death.
 if [ $BOBS_HEALTH -lt 1 ]; then
 echo "this is the end you have died"
 read dededededededed
 exit
-#move on if still alive
+# Move on if still alive.
 else echo "still alive woot"
 fi
 animation2(){
@@ -1881,17 +1881,17 @@ Ugh...I Am Getting Hungry Mana Reserve Dropping..Gotta Figure Something Out.
 I Hope That Nothing Spooky Is Down Here Hiding In The Shadows..!
 EOF
 read nnnn
-#check for death
+# Check for death.
 if [ $BOBS_HEALTH -lt 1 ]; then
 echo "this is the end you have died"
 read dedededededededed
 exit
-#move on if still alive
+# Move on if still alive.
 else echo "still alive woot"
 fi
 }
 level7
-# Ends Level 7
+# Ends Level 7.
 
 echo 'end of LeveL Seven7'
 read oooo
@@ -1899,7 +1899,7 @@ read oooo
 echo 'I Hope You Are Feeling Great And Ready For LeveL 8Eight8'
 read pppp
 
-# Begins Level Eight8
+# Begins Level Eight8.
 level8(){
 
 caveani
