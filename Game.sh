@@ -2192,6 +2192,162 @@ $COIN coins
 Not Going To Lie That Freaked Me Out Ha....
 EOF
 read wwww
+cat << EOF
+...................................................
+     V       v                    V      v
+     V                            v
+                               
+                       o     
+                      -X-A<-Crystal          
+.......................t.............A..............
+$BOBS_HEALTH mana
+$COIN coins
+What Is That!!!!!?...I Hear A Rumble?
+EOF
+read xxxx
+cavequake(){
+cat << EOF
+...................................................
+     V       v                    V      v
+     V  <-danger                         v
+                               
+     0         shaking commenses              
+    -X-                     <-cracked ground     
+.....t.....................|..........A..............
+$BOBS_HEALTH mana
+$COIN coins
+What Is This!!!!!?...The Ground Is Cracking And Shaking!
+I Better Find A Way To Protect My Self From Falling Stalagtights.
+EOF
+read yyyy
+caveani
+# This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
+# This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
+cat << EOF
+...................................................
+     V       v                    V      v
+     V                            v
+                                     dead warrior
+                       o           -DDDDD-<-sheild
+                      -X-A        x_|_/ <-ded skelton 
+.......................t..........x.|.\...............
+$BOBS_HEALTH mana
+$COIN coins
+I Have An Idea I Can Use This Dead Warriors Sheild..
+EOF
+read zzzz
+cat << EOF
+...................................................
+     V       v                    V      v
+     V  <-danger                         v
+
+
+  -DDDDD-<-sheild                          
+     0         shaking commenses              
+    -X-                     <-cracked ground     
+.....t.....................|..........A..............
+$BOBS_HEALTH mana
+$COIN coins
+This Will Protect Me! I Hope...
+EOF
+read aaaaa
+
+SHEILD_STRESS=1
+
+while true; do
+
+cat << EOF
+...................................................
+     V       v                    V      v
+     V  <-danger                         v
+     
+
+  -DDDDD-<-sheild                          
+     0         shaking commenses              
+    -X-                     <-cracked ground     
+.....t.....................|..........A..............
+$BOBS_HEALTH mana
+$COIN coins
+$SHEILD_STRESS :sheild stress
+Its Working....
+EOF
+sleep .2
+cat << EOF
+...................................................
+     V       v                    V      v
+        <-danger                         v
+     V
+
+  -DDDDD-<-sheild                          
+     0         shaking commenses              
+    -X-                     <-cracked ground     
+.....t.....................|..........A..............
+$BOBS_HEALTH mana
+$COIN coins
+$SHEILD_STRESS :sheild stress
+Its Working....
+EOF
+sleep .2
+cat << EOF
+...................................................
+     V       v                    V      v
+        <-danger                         v
+      
+     V
+  -DDDDD-<-sheild                          
+     0         shaking commenses              
+    -X-                     <-cracked ground     
+.....t.....................|..........A..............
+$BOBS_HEALTH mana
+$COIN coins
+$SHEILD_STRESS :sheild stress
+Its Working....
+EOF
+sleep .2
+cat << EOF
+...................................................
+     V       v                    V      v
+        <-danger                         v
+      
+      
+  -DDDDD-<-sheild                          
+     0         shaking commenses              
+    -X-                     <-cracked ground     
+.....t.....................|..........A..............
+$BOBS_HEALTH mana
+$COIN coins
+$SHEILD_STRESS :sheild stress
+Its Working....
+EOF
+sleep .2
+((SHEILD_STRESS += 7))
+if [[ SHEILD_STRESS -ge 250 ]]; then
+            break
+             fi
+done
+}
+cavequake
+# This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
+# This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
+cat << EOF
+...................................................
+     V       v                    V      v
+     V                            v
+                               
+                       o     
+                      -X-A<-Crystal          
+.......................t.............A..............
+$BOBS_HEALTH mana
+$COIN coins
+I Cant Believe I Did Not Take Any Damage!!!
+EOF
+read bbbbb
 }
 level8
 
