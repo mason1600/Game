@@ -1273,7 +1273,8 @@ whats this it looks like that cabin again?
 should i look around see if i missed anything?yes or no.
 EOF
 read ppp
-
+# This is the first introduction of a case conditional statement.
+# I wanted to include a good mix of both 'if' and 'case' statements for anyone trying to learn both for reference.
 case $ppp in 
         yes)
     ((BOBS_HEALTH += 2))
@@ -1289,16 +1290,19 @@ i found some fruit on the ground under the tree it wasnt bad yet
 nom nom
 EOF
 read qqq
-    ;;
+    # Do NOT FORGET your double semis in-between choices or prepare for confusion and madness when testing lol.
+	;;
         no)
        animation
        ;;
-    *)
+    # The asterisk handles all other choices or non choices in a case statement.
+	*)
     echo "$ppp is not a valid response"
     read pause
     exit
     ;;
-    esac
+    # This word esac or case backwards ends the case statement.
+	esac
 	
 	cat << EOF
 
