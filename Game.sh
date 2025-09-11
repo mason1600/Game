@@ -95,7 +95,7 @@ level2(){
 $BOBS_HEALTH mana
 You will need FOOD to recover mana. 
 EOF
-# Pauses using read command
+# Pauses using read command.
 read extra
 
 # This is the main moving animation for the game.
