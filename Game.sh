@@ -67,6 +67,7 @@ This is bob.
   t
 YOU are now bob!!
 EOF
+# This pauses again using read.
 read fourth
 cat << EOF
                 
@@ -94,10 +95,11 @@ level2(){
 $BOBS_HEALTH mana
 You will need FOOD to recover mana. 
 EOF
+# Pauses using read command
 read extra
 
 # This is the main moving animation for the game.
-
+# This uses mainly the cat command and sleep to pause for half a second between frames.
 animation(){
 	cat << EOF
 
@@ -188,13 +190,14 @@ sleep .5
 EOF
 sleep .5
 }
+# Call it by typing its function name.
 animation
 # This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
 # This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
-
+# The cat command used again.
 cat << EOF
          o              tttt         
         -X-            tttttt <---tree           
@@ -204,9 +207,9 @@ $BOBS_HEALTH mana
 
 Type eat to eat apple from nearby Tree to recover 1 mana.
 EOF
-
+# Using read to pause.
 read eat
-
+# The cat command again.
  cat << EOF
          o
         -X-
@@ -214,13 +217,16 @@ read eat
 $((BOBS_HEALTH += 1)) mana
 Nice He Recovered Woot!
 EOF
+# The read command to pause till enter press.
 read extra
+# This calls the animation function again.
 animation
 # This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
 # This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
+# The cat command again.
 cat << EOF
          o               o 
         -X-             -X-
@@ -230,7 +236,9 @@ There is another Human could be Dangerous say Hello?
 EOF
 # This takes bobs health and subtracts a random number from 1-7.
 ((BOBS_HEALTH-=$(($RANDOM % 7 + 1))))
+# The read to pause again.
 read hi
+# Using cat to print again.
 cat << EOF
          o               o 
         -X-             -X-
@@ -241,6 +249,7 @@ $BOBS_HEALTH mana
 He was a bad guy it seems we had to kill him
 and now we have sustaianed damage.
 EOF
+# More cat command.
 cat << EOF
       o
      -X-
@@ -248,7 +257,9 @@ cat << EOF
 ..................................
 lets bury the guy
 EOF
+# And pause with read.
 read sixth
+# And cat agian.
 cat << EOF
       o                   ..
      -X-                 ....
@@ -257,7 +268,9 @@ cat << EOF
 alright buryed him under some dirt
 $BOBS_HEALTH mana
 EOF
+# Using Read to hold till enter press.
 read seventh
+# Calls the animation again.
 animation
 # This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
 # This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
@@ -266,6 +279,7 @@ read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
 # End of level two.
 }
+# This calls level2 function.
 level2
 # Beginning of level three.
 level3(){
