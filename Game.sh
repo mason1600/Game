@@ -282,11 +282,13 @@ read -t .1 -n 1 dummytrap
 # This calls level2 function.
 level2
 # Beginning of level three.
+# This creates level3 function.
 level3(){
 
-
+	# This echos intro for lvl 3.
 	echo "welcome to LEVEL 3 i cant believe you made it this far"
-	cat << EOF        
+	# The cat command again.
+ 	cat << EOF        
 			  BBBB
       o                  BBiBBB
      -X-a bird---->^V^  BBiiiiBB
@@ -295,7 +297,9 @@ level3(){
 a tree grows suddenly out of the dirt as a bird flys by weird?
 $BOBS_HEALTH mana
 EOF
+# The read command.
 read eighth
+# The cat command.
 cat << EOF        
                           BBBB
       o           i      BBiBBB
@@ -305,6 +309,7 @@ cat << EOF
 $BOBS_HEALTH mana
 the tree grabs the bird eats it and spits out a apple do you eat it? yes or no?
 EOF
+# Using read to pause.
 read NINTH
 # Then using a if then else statement to check.
 if [[ $NINTH == yes ]]; then
@@ -331,7 +336,7 @@ exit
 # Else it will continue with woot.
 else echo "still alive woot"
 fi
- 
+ # The cat command used again.
 cat << EOF        
                           BBBB
       o                  BBiBBB
@@ -341,7 +346,7 @@ cat << EOF
 $BOBS_HEALTH mana
 the result of either eating the apple or not is?good or bad.
 EOF
-
+# The read command to pause till enter press.
 read TENTH
 # Then using a if then else statement to check.
 if [[ $TENTH == good ]]; then
@@ -360,7 +365,7 @@ else
     exit
 # Ends the if statement by typing if backwards or fi.
 fi
-
+# The cat command.
 cat << EOF        
                              BBBB
       o      t i tt         BBiBBB
@@ -370,13 +375,16 @@ cat << EOF
 $BOBS_HEALTH mana
 we now continue on our path to whereever we are going-->
 EOF
+# Using read to pause.
 read eleventh
+# Calls the animation agian.
 animation
 # This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
 # This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
+# The cat command again.
 cat << EOF        
                           
       o                  
