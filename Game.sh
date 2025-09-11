@@ -49,7 +49,7 @@ cat << EOF
 	 t
 Alright. We fixed him. Health Restored!
 EOF
-# Using read to pause agian,
+# Using read to pause agian.
 read THIRD
 
 # End of intro.
