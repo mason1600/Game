@@ -8,6 +8,7 @@ BOBS_HEALTH=99
 # This variable is created with a value of 1 for bobs coins to be collected.
 COIN=1
 # Intro for game.
+# The cat command is used to print everything between the two EOFs stands for end of file.
 cat << EOF
 		-x-
 This Is Bob!!!
@@ -20,6 +21,7 @@ EOF
 echo "Hitting Enter Moves On IF NO Selection."
 # Read command used to hold user till press of enter.
 read first
+# The cat command used again.
 cat << EOF
 
 	o
@@ -29,12 +31,16 @@ cat << EOF
 	t
 Ohhh Bob got all messed up how can we fix this???
 EOF
+# The Read command used to pause again till enter press.
 read second
+# The cat command used again.
 cat << EOF
 
 Alright lets fix him.
 EOF
+# The read command to pause.
 read secondsecond
+# Another cat command.
 cat << EOF
 
 
@@ -43,11 +49,13 @@ cat << EOF
 	 t
 Alright. We fixed him. Health Restored!
 EOF
+# Using read to pause agian,
 read THIRD
 
 # End of intro.
 
 # First level of game introducing health.
+# First function created called level1 containing all of level one.
 level1(){
 	 
 
@@ -69,10 +77,14 @@ cat << EOF
 EOF
 }
 # End level of level one.
+# Typing level1 directly below the function calls that function named level1.
 level1
+# The echo command echos begin level two.
 echo "begin lvl 2"
+# This uses read to pause again till enter press.
 read fourth
 # This is the beginning of the second level.
+# This creates second function named level2.
 level2(){
 
 	cat << EOF
