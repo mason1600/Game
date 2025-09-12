@@ -309,7 +309,7 @@ cat << EOF
 $BOBS_HEALTH mana
 the tree grabs the bird eats it and spits out a apple do you eat it? yes or no?
 EOF
-# Using read to pause.
+# Using read to pause and ask.
 read NINTH
 # Then using a if then else statement to check.
 if [[ $NINTH == yes ]]; then
@@ -346,7 +346,7 @@ cat << EOF
 $BOBS_HEALTH mana
 the result of either eating the apple or not is?good or bad.
 EOF
-# The read command to pause till enter press.
+# The read command to pause and ask.
 read TENTH
 # Then using a if then else statement to check.
 if [[ $TENTH == good ]]; then
@@ -397,12 +397,14 @@ hey you found your first coin woot
 EOF
 # Using read to pause.
 read thirteenth
+# Calls the animation.
 animation
 # This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
 # This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
+# The cat command.
 cat << EOF        
                   @<--fruit           
       o      t i tt         
@@ -413,6 +415,7 @@ $BOBS_HEALTH mana
 $COIN coins
 there is a ded tree with one fruit left on it do you eat it? yes or no
 EOF
+# Using read to pause and ask.
 read FOURTEENTH
 # Then using a if then else statement to check.
 if [[ $FOURTEENTH == yes ]]; then
@@ -437,7 +440,7 @@ exit
 # Move on if still alive.
 else echo "still alive woot"
 fi
-
+# The cat command used again.
 cat << EOF        
                              
                    
@@ -448,7 +451,9 @@ $BOBS_HEALTH mana
 $COIN coins
 it was extremly toxic if you ate it other wise hunger takes 1 health anyway
 EOF
+# Using read to pause.
 read fiveteen
+# Calls the animation.
 animation
 # This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
 # This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
@@ -457,14 +462,15 @@ read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
 # End of level 3.
 }
+# Calls level3 function.
 level3
 # Beginning of level 4.
 echo "CONGRATS YOU MADE IT TO LEVEL 4"
 # Waits for user input to move on to level 4 ,example enter.
 read sixteen
-
+# This creates level4 as a function.
 level4(){
-
+# The cat command shows the user rain drops.
 cat << EOF        
                    d<---rain drops           
   d        d         
@@ -475,9 +481,10 @@ $BOBS_HEALTH mana
 $COIN coins
 now that your done voming you look up and see rain
 EOF
+# Using read to hold till enter press.
 read eightteenth
-((BOBS_HEALTH += 3))
-
+((BOBS_HEALTH += 3))  # This adds 3 health to bob.
+# The cat command again.
 cat << EOF        
                    d<---rain drops           
   d        d         
@@ -488,7 +495,9 @@ $BOBS_HEALTH mana
 $COIN coins
 the rain is clean and good and gives you 3 health nice woot
 EOF
+# Using read to hold till enter press.
 read nineteenth
+# Calls the animation.
 animation
 # This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
 # This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
