@@ -2396,6 +2396,99 @@ $COIN coins
 I Cant Believe I Did Not Take Any Damage!!!
 EOF
 read bbbbb
+caveani
+# This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
+# This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
+batani
+# This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
+# This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
+cat << EOF
+..............................|..|...........|..|.....
+     V       v               |    |  V   v  |    |
+     V                      |      | v     |      |
+                           |  left  |     |  right |
+            o               |      |       |      |
+           -X-A<-Crystal     |    |         |    |
+............t.................|..|.....A.....|..|.....
+$BOBS_HEALTH mana
+$COIN coins
+It Seems The Cave Splits Here Should I Go left or right?
+EOF
+read ccccc
+
+case $ccccc in
+    right)
+        ((BOBS_HEALTH -= 4))
+        cat << EOF
+..............................|..|..........|..|.....
+     V       v               |    |  V   v |    |
+     V                      |      | v    |      |
+                           |  left  |    |  right |
+                            |      |      | o    |
+                             |   |         |-X-A|
+.............................|..|....A.....|.t.|.....
+$BOBS_HEALTH mana
+$COIN coins
+I Could Not Get Far It Caved In Took Moderate Damage.
+EOF
+read ddddd
+;;
+    left)
+        ((BOBS_HEALTH -= 2))
+        cat << EOF
+..............................|..|...........|..|.....
+     V       v               |    |  V   v  |    |
+     V                      |      | v     |      |
+                           |  left  |     |  right |
+                            |  o   |       |      |
+                             |-X-A|         |   |
+.............................|.t.|....A.....|..|.....
+$BOBS_HEALTH mana
+$COIN coins
+I Could Not Get Far It Flooded Took Minor Damage.
+EOF
+read eeeee
+;;
+    *)
+    echo 'not a valid response'
+    read fffff
+    exit
+;;
+esac
+# Check for death.
+if [ $BOBS_HEALTH -lt 1 ]; then
+echo "this is the end you have died"
+read dedededededededed
+exit
+# Move on if still alive.
+else echo "still alive woot"
+fi
+caveani
+# This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
+# This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
+cat << EOF
+...................................................
+     V       v                    V      v
+     V                            v
+                               
+                       o     
+                      -X-A<-Crystal          
+.......................t.............A..............
+$BOBS_HEALTH mana
+$COIN coins
+At Least I Have Not Run In-To Anything To Spooky Yet.
+Just Some Casual Spelunking.
+EOF
+read fffff
 }
 level8
 
