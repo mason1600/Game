@@ -395,6 +395,7 @@ $BOBS_HEALTH mana
 $COIN coins
 hey you found your first coin woot
 EOF
+# Using read to pause.
 read thirteenth
 animation
 # This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
