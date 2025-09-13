@@ -2433,7 +2433,7 @@ case $ccccc in
      V       v               |    |  V   v |    |
      V                      |      | v    |      |
                            |  left  |    |  right |
-                            |      |      | o    |
+                            |      |      |  o   |
                              |   |         |-X-A|
 .............................|..|....A.....|.t.|.....
 $BOBS_HEALTH mana
