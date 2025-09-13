@@ -2375,7 +2375,7 @@ Its Working....
 EOF
 sleep .2
 ((SHEILD_STRESS += 7))
-if [[ SHEILD_STRESS -ge 250 ]]; then
+if [[ SHEILD_STRESS -ge 150 ]]; then
             break
              fi
 done
