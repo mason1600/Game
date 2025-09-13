@@ -57,8 +57,7 @@ read THIRD
 # First level of game introducing health.
 # First function created called level1 containing all of level one.
 level1(){
-	 
-
+# The cat command used again. 
 cat << EOF
                 -x-
 This is bob.
@@ -87,7 +86,7 @@ read fourth
 # This is the beginning of the second level.
 # This creates second function named level2.
 level2(){
-
+# The cat command used once again.
 	cat << EOF
 	 o
 	-X-
@@ -97,7 +96,6 @@ You will need FOOD to recover mana.
 EOF
 # Pauses using read command.
 read extra
-
 # This is the main moving animation for the game.
 # This uses mainly the cat command and sleep to pause for half a second between frames.
 animation(){
