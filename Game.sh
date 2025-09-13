@@ -204,7 +204,7 @@ cat << EOF
 .........................tt..................
 $BOBS_HEALTH mana
 
-Type eat to eat apple from nearby Tree to recover 1 mana.
+Type eat to eat Apple From Nearby Tree To Recover 1 Mana.
 EOF
 # Using read to pause.
 read eat
