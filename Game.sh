@@ -36,7 +36,7 @@ read second
 # The cat command used again.
 cat << EOF
 
-Alright lets fix him.
+Alright Lets Fix Him.
 EOF
 # The read command to pause.
 read secondsecond
