@@ -68,6 +68,7 @@ YOU are now bob!!
 EOF
 # This pauses again using read.
 read fourth
+# The cat command again to print.
 cat << EOF
                 
  BOB
