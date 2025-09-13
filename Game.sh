@@ -47,7 +47,7 @@ cat << EOF
 	 o		mana 100
 	-X-
 	 t
-Alright. We fixed him. Health Restored!
+Alright. We Fixed Him. Health Restored!
 EOF
 # Using read to pause agian.
 read THIRD
@@ -60,11 +60,11 @@ level1(){
 # The cat command used again. 
 cat << EOF
                 -x-
-This is bob.
+This Is Bob.
   o
 - X -    bobs health.. $BOBS_HEALTH mana
   t
-YOU are now bob!!
+YOU Are Now Bob!!
 EOF
 # This pauses again using read.
 read fourth
