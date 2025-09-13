@@ -15,7 +15,7 @@ This Is Bob!!!
   o
 - X -	Bobs Health..100mana
   t
-Bob is on an Adventure!!
+Bob Is On An Adventure!!
 EOF
 # Echo command informs user that hitting enter will move on if no selection is given.
 echo "Hitting Enter Moves On IF NO Selection."
@@ -29,7 +29,7 @@ cat << EOF
 	matrix glitch
 	x
 	t
-Ohhh Bob got all messed up how can we fix this???
+Ohhh Bob Got All Messed Up How Can We Fix This???
 EOF
 # The Read command used to pause again till enter press.
 read second
