@@ -93,7 +93,7 @@ level2(){
 	-X-
 	 t
 $BOBS_HEALTH mana
-You will need FOOD to recover mana. 
+You Will Need FOOD To Recover Mana. 
 EOF
 # Pauses using read command.
 read extra
