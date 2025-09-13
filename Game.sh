@@ -504,6 +504,7 @@ animation
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
+# The cat command again.
 cat << EOF        
 ............................                              
              .. . .  .  . .    
@@ -513,9 +514,10 @@ cat << EOF
 $BOBS_HEALTH mana
 $COIN coins
 you come to a crossroads given a choice left right or forward
-
 EOF
+# The read command used to pause and ask.
 read aa
+# A if then elif else fi conditional statement.
 if [ $aa == left ]; then
 ((BOBS_HEALTH -= 30))
 cat << EOF 
@@ -581,6 +583,7 @@ animation
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
+# The cat command used again.
 cat << EOF
 
 $BOBS_HEALTH mana
@@ -592,7 +595,9 @@ $COIN coins                -X- sun
 whats this ? oh a treasure chest i think?
 should i open it?yes or no?
 EOF
+# Using read to pause and ask.
 read ee
+# A if conditional statement.
 if [ $ee == yes ]; then
 ((COIN += 1))
 ((BOBS_HEALTH += 1))
