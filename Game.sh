@@ -23,10 +23,10 @@ echo "Hitting Enter Moves On IF NO Selection."
 read first
 # The cat command used again.
 cat << EOF
-
-	o
-	--	mana 65 ow took a hit
-	matrix glitch
+    !
+	0
+	--	Mana 65 ow took a hit!
+	MaTriX GlItCh
 	x
 	t
 Ohhh Bob Got All Messed Up How Can We Fix This???
@@ -44,7 +44,7 @@ read secondsecond
 cat << EOF
 
 
-	 o		mana 100
+	 o		Mana 100
 	-X-
 	 t
 Alright. We Fixed Him. Health Restored!
@@ -62,7 +62,7 @@ cat << EOF
                 -x-
 This Is Bob.
   o
-- X -    bobs health.. $BOBS_HEALTH mana
+- X -    Bobs Health.. $BOBS_HEALTH Mana
   t
 YOU Are Now Bob!!
 EOF
@@ -73,7 +73,7 @@ cat << EOF
                 
  BOB
   o
-- X -    bobs health..$BOBS_HEALTH mana
+- X -    Bobs Health..$BOBS_HEALTH Mana
   t
 EOF
 }
