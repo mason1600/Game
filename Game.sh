@@ -35,15 +35,12 @@ EOF
 read second
 # The cat command used again.
 cat << EOF
-
 Alright Lets Fix Him.
 EOF
 # The read command to pause.
 read secondsecond
 # Another cat command.
 cat << EOF
-
-
 	 o		Mana 100
 	-X-
 	 t
@@ -69,8 +66,7 @@ EOF
 # This pauses again using read.
 read fourth
 # The cat command again to print.
-cat << EOF
-                
+cat << EOF               
  BOB
   o
 - X -    Bobs Health..$BOBS_HEALTH Mana
@@ -101,7 +97,7 @@ read extra
 # This uses mainly the cat command and sleep to pause for half a second between frames.
 animation(){
 	cat << EOF
-
+ 
    o
   -X-
 ...t....................
@@ -199,11 +195,10 @@ read -t .1 -n 1 dummytrap
 # The cat command used again.
 cat << EOF
          o              tttt         
-        -X-            tttttt <---tree           
-         t               tt     nearby
+        -X-            tttttt <---Tree           
+         t               tt     Nearby
 .........................tt..................
-$BOBS_HEALTH mana
-
+$BOBS_HEALTH Mana
 Type eat to eat Apple From Nearby Tree To Recover 1 Mana.
 EOF
 # Using read to pause.
@@ -213,7 +208,7 @@ read eat
          o
         -X-
          t
-$((BOBS_HEALTH += 1)) mana
+$((BOBS_HEALTH += 1)) Mana
 Nice He Recovered Woot!
 EOF
 # The read command to pause till enter press.
@@ -243,7 +238,6 @@ cat << EOF
         -X-             -X-
          t              jj
 ..............................
-
 $BOBS_HEALTH mana
 He was a bad guy it seems we had to kill him
 and now we have sustaianed damage.
@@ -254,7 +248,7 @@ cat << EOF
      -X-
       t                 oIjj
 ..................................
-lets bury the guy
+Lets bury the guy.
 EOF
 # And pause with read.
 read sixth
@@ -264,8 +258,8 @@ cat << EOF
      -X-                 ....
       t                 ......
 ..................................
-alright buryed him under some dirt
-$BOBS_HEALTH mana
+Alright buryed him under some dirt.
+$BOBS_HEALTH Mana
 EOF
 # Using Read to hold till enter press.
 read seventh
@@ -293,8 +287,8 @@ level3(){
      -X-a bird---->^V^  BBiiiiBB
       t                 BiiiiiB
 .........................iiiii.....
-a tree grows suddenly out of the dirt as a bird flys by weird?
-$BOBS_HEALTH mana
+A tree grows suddenly out of the dirt as a bird flys by weird?
+$BOBS_HEALTH Mana
 EOF
 # The read command.
 read eighth
@@ -305,8 +299,8 @@ cat << EOF
      -X-a apple-->@     BBiiiiBB
       t                 BiiiiiB
 .........................iiiii.....
-$BOBS_HEALTH mana
-the tree grabs the bird eats it and spits out a apple do you eat it? yes or no?
+$BOBS_HEALTH Mana
+The tree grabs the bird eats it and spits out a apple do you eat it? yes or no?
 EOF
 # Using read to pause and ask.
 read NINTH
@@ -342,8 +336,8 @@ cat << EOF
      -X-                BBiiiiBB
       t                 BiiiiiB
 .........................iiiii.....
-$BOBS_HEALTH mana
-the result of either eating the apple or not is?good or bad.
+$BOBS_HEALTH Mana
+The result of either eating the apple or not is?good or bad.
 EOF
 # The read command to pause and ask.
 read TENTH
@@ -371,8 +365,8 @@ cat << EOF
      -X-      tit           BBiiiiBB
       t       ti<-ded tree   BiiiiiB
 ...............i..............iiiii.....
-$BOBS_HEALTH mana
-we now continue on our path to whereever we are going-->
+$BOBS_HEALTH Mana
+We now continue on our path to whereever we are going-->
 EOF
 # Using read to pause.
 read eleventh
@@ -384,15 +378,14 @@ read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
 # The cat command again.
-cat << EOF        
-                          
+cat << EOF                            
       o                  
-     -X-@     found it here--v           
+     -X-@     Found It Here--v           
       t                      v
 .............................v....
-$BOBS_HEALTH mana
-$COIN coins
-hey you found your first coin woot
+$BOBS_HEALTH Mana
+$COIN Coins
+Hey you found your first coin woot!
 EOF
 # Using read to pause.
 read thirteenth
@@ -405,14 +398,14 @@ read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
 # The cat command.
 cat << EOF        
-                  @<--fruit           
+                  @<--Fruit           
       o      t i tt         
      -X-      tit           
-      t       ti<-ded tree   
+      t       ti<-Ded Tree   
 ...............i..............
-$BOBS_HEALTH mana
-$COIN coins
-there is a ded tree with one fruit left on it do you eat it? yes or no
+$BOBS_HEALTH Mana
+$COIN Coins
+There is a ded tree with one fruit left on it do you eat it? yes or no?
 EOF
 # Using read to pause and ask.
 read FOURTEENTH
@@ -440,15 +433,13 @@ exit
 else echo "still alive woot"
 fi
 # The cat command used again.
-cat << EOF        
-                             
-                   
-      o.  blah           
-     -X- . .  <--vomit   
+cat << EOF                   
+      o.  Blah           
+     -X- . .  <--Vomit   
 ......t......j................
-$BOBS_HEALTH mana
-$COIN coins
-it was extremly toxic if you ate it other wise hunger takes 1 health anyway
+$BOBS_HEALTH Mana
+$COIN Coins
+It was extremly toxic if you ate it other wise hunger takes 1 health anyway.
 EOF
 # Using read to pause.
 read fiveteen
@@ -1284,7 +1275,7 @@ cat << EOF
                      v   
       o              o  <--- hi im the DEV
      -X-            -x-   at this point
-......t..............j.the game is 1124 lines of code
+......t..............j.the game is 1278 lines of code
 $BOBS_HEALTH mana
 $COIN coins
 EOF
