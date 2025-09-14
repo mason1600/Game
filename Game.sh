@@ -23,7 +23,7 @@ echo "Hitting Enter Moves On IF NO Selection."
 read first
 # The cat command used again.
 cat << EOF
-    !
+        !
 	0
 	--	Mana 65 ow took a hit!
 	MaTriX GlItCh
