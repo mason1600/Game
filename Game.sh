@@ -238,7 +238,7 @@ cat << EOF
         -X-             -X-
          t              jj
 ..............................
-$BOBS_HEALTH mana
+$BOBS_HEALTH Mana
 He was a bad guy it seems we had to kill him
 and now we have sustained damage.
 EOF
@@ -344,11 +344,11 @@ read TENTH
 # Then using a if then else statement to check.
 if [[ $TENTH == good ]]; then
     # Call it.
-    	echo "ya its YUM it grew from the finest dirts and herbs and minerls the earth could offer"
+    	echo "ya its YUM it grew from the finest dirts and herbs and minerls of the earth."
 sleep 2
 elif [[ $TENTH == bad ]]; then
 	echo "well you probly shuld have ate it then duhhh lol XD"
-sleep 2
+sleep 1
 else
     # Answer does not exist, handle the situation (e.g., print an error).
     echo "Error: $TENTH does not exist." "do to user error the app will close with press of enter"
@@ -462,28 +462,28 @@ read sixteen
 level4(){
 # The cat command shows the user rain drops.
 cat << EOF        
-                   d<---rain drops           
+                   d<---Rain Drops           
   d        d         
     d o          d    
   d  -X-    d
 ......t......................
-$BOBS_HEALTH mana
-$COIN coins
-now that your done voming you look up and see rain
+$BOBS_HEALTH Mana
+$COIN Coins
+Now that your done voming you look up and see rain.
 EOF
 # Using read to hold till enter press.
 read eightteenth
 ((BOBS_HEALTH += 3))  # This adds 3 health to bob.
 # The cat command again.
 cat << EOF        
-                   d<---rain drops           
+                   d<---Rain Drops           
   d        d         
     d o          d    
   d  -X-    d
 ......t......................
-$BOBS_HEALTH mana
-$COIN coins
-the rain is clean and good and gives you 3 health nice woot
+$BOBS_HEALTH Mana
+$COIN Coins
+The rain is clean and good and gives you 3 health nice woot!
 EOF
 # Using read to hold till enter press.
 read nineteenth
@@ -501,9 +501,9 @@ cat << EOF
       o    . .<-left right->or forward          
      -X- . .  . . .  .   .     
 ......t......................
-$BOBS_HEALTH mana
-$COIN coins
-you come to a crossroads given a choice left right or forward
+$BOBS_HEALTH Mana
+$COIN Coins
+You come to a crossroads given a choice left right or forward?
 EOF
 # The read command used to pause and ask.
 read aa
@@ -515,12 +515,12 @@ cat << EOF
 ..... xxxxx....................... x......
 .....  xxxx....xxxxxxx..... xx.......   ..
 ..................................xxxx......
-..o..ouch...pitfalls.............xxxxx.......
+..o..Ouch...Pitfalls.............xxxxx.......
 .-X-....... xxxx..... xxxxxx.................
 ..t..  xxxxx ................................
-$BOBS_HEALTH mana
-$COIN coins
-you fall into a pitfall and take substantial damage
+$BOBS_HEALTH Mana
+$COIN Coins
+You fall into a pitfall and take substantial damage!
 EOF
 read cc
 elif [ $aa == right ]; then
@@ -529,30 +529,30 @@ elif [ $aa == right ]; then
 cat << EOF 
 ..............................................
            xxxx                                 
-            i <-tree                  @  <-coin            
+            i <-Tree                  @  <-Coin            
             i                                  
                                             
      o                           q qqq             
-    -X-                          qqq   <-veggies            
+    -X-                          qqq   <-Veggies            
 .....t...........................................
-$BOBS_HEALTH mana
-$COIN coins
-you go down a nice path and find fresh veggies and a coin
+$BOBS_HEALTH Mana
+$COIN Coins
+You go down a nice path and find fresh veggies and a coin.
 EOF
 read dd
 elif [ $aa == forward ];  then
 cat << EOF
 ...............................................
 
-      o -...> theres nothing here
+      o -...> Theres Nothing Here
      -X-
       t
                           
-$BOBS_HEALTH mana
-$COIN coins
+$BOBS_HEALTH Mana
+$COIN Coins
                       
 ...............................................
-its just a empty path? ugh sigh...
+Its just a empty path? Ugh Sigh...
 EOF
 read ee
 else echo "invalid choice you lose"
@@ -561,7 +561,7 @@ exit
 fi
 # Check for death.
 if [ $BOBS_HEALTH -lt 1 ]; then
-echo "this is the end you have died"
+echo "This is the end you have died."
 read dededededed
 exit
 # Move on if still alive.
@@ -576,14 +576,14 @@ read -t .1 -n 1 dummytrap
 # The cat command used again.
 cat << EOF
 
-$BOBS_HEALTH mana
-$COIN coins                -X- sun                     
+$BOBS_HEALTH Mana
+$COIN Coins                -X- Sun                     
                                       
-    o                   c   chest            
+    o                   c   Chest            
    -X-                j---j                   
 ....t..................---.................
-whats this ? oh a treasure chest i think?
-should i open it?yes or no?
+Whats this ? Oh a treasure chest i think?
+Should i open it?yes or no?
 EOF
 # Using read to pause and ask.
 read ee
@@ -593,14 +593,14 @@ if [ $ee == yes ]; then
 ((BOBS_HEALTH += 1))
 cat << EOF
 
-$BOBS_HEALTH mana
-$COIN coins                -X- sun                     
+$BOBS_HEALTH Mana
+$COIN Coins                -X- Sun                     
                                       
-                      o   - chest open            
+                      o   - Chest Open            
                      -X- i@ -j                   
 .............. .......t.---.................
-its seems there is a coin and a crunchy pickle inside
-i will take the coin and crunch the pickle
+Its seems there is a coin and a crunchy pickle inside.
+I will take the coin and crunch the pickle.
 EOF
 read ff
 elif [ $ee == no ]; then 
@@ -610,7 +610,7 @@ animation
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
-else echo "no not a proper command"
+else echo "No not a proper command."
 read ff
 exit
 fi
@@ -621,36 +621,36 @@ read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
 cat << EOF                                      
-$BOBS_HEALTH mana
-$COIN coins                                     
+$BOBS_HEALTH Mana
+$COIN Coins                                     
                                         
           o                o            
          -X-             t-X-O              
 ..........t...............jj...........
-oh no this warrior wants to do battle
+Oh no this warrior wants to do battle!
 EOF
 read gg
 cat << EOF                                      
-$BOBS_HEALTH mana
-$COIN coins                                     
+$BOBS_HEALTH Mana
+$COIN Coins                                     
                  $(($RANDOM % 5 + 1))dmg           
           o                o            
          -X-             t-X-O              
 ..........t...............jj...........
-prepare for battle
-you do damage
+Prepare for battle!
+You do damage!
 EOF
 read hh
 ((BOBS_HEALTH -= 3 ))
 cat << EOF                                      
-$BOBS_HEALTH mana
-$COIN coins                                     
+$BOBS_HEALTH Mana
+$COIN Coins                                     
          3 dmg                  
           o                o            
          -X-             t-X-O              
 ..........t...............jj...........
-prepare for battle
-he does damage
+Prepare for battle!
+He does damage!
 EOF
 read ii
 # Check for death.
@@ -662,35 +662,35 @@ exit
 else echo "still alive woot"
 fi
 cat << EOF                                      
-$BOBS_HEALTH mana
-$COIN coins                                     
+$BOBS_HEALTH Mana
+$COIN Coins                                     
                  $(($RANDOM % 5 + 1))dmg           
           o                o            
          -X-             t-X-O              
 ..........t...............jj...........
-prepare for battle
-you do damage
+Prepare for battle!
+You do damage!
 EOF
 read jj
 cat << EOF                                      
-$BOBS_HEALTH mana
-$COIN coins                                     
+$BOBS_HEALTH Mana
+$COIN Coins                                     
                  $(($RANDOM % 5 + 1))dmg           
           o                o            
          -X-             t-X-O              
 ..........t...............jj...........
-prepare for battle
-you do damage again
+Prepare for battle!
+You do damage again!
 EOF
 read kk
 cat << EOF                                      
-$BOBS_HEALTH mana
-$COIN coins                                     
+$BOBS_HEALTH Mana
+$COIN Coins                                     
                            
-          o               dead             
-         -X-             oxg  warior            
+          o               Dead             
+         -X-             oxg  Warrior            
 ..........t...............jj...........
-he dies quick must have been a noob with no hax
+He dies quick must have been a noob with no hax.
 EOF
 read ll
 animation
@@ -705,9 +705,9 @@ cat << EOF
       o    . .<-left right->or forward          
      -X- . .  . . .  .   .     
 ......t......................
-$BOBS_HEALTH mana
-$COIN coins
-you come to a crossroads given a choice left right or forward
+$BOBS_HEALTH Mana
+$COIN Coins
+You come to a crossroads given a choice left right or forward?
 
 EOF
 read aa
