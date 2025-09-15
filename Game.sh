@@ -284,7 +284,7 @@ level3(){
  	cat << EOF        
 			  BBBB
       o                  BBiBBB
-     -X-a bird---->^V^  BBiiiiBB
+     -X-A Bird---->^V^  BBiiiiBB
       t                 BiiiiiB
 .........................iiiii.....
 A Tree Grows Suddenly Out Of The Dirt As A Bird Flys By Weird?
