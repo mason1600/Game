@@ -363,7 +363,7 @@ cat << EOF
                              BBBB
       o      t i tt         BBiBBB
      -X-      tit           BBiiiiBB
-      t       ti<-ded tree   BiiiiiB
+      t       ti<-Ded Tree   BiiiiiB
 ...............i..............iiiii.....
 $BOBS_HEALTH Mana
 We now continue on our path to whereever we are going-->
