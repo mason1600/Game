@@ -240,7 +240,7 @@ cat << EOF
 ..............................
 $BOBS_HEALTH mana
 He was a bad guy it seems we had to kill him
-and now we have sustaianed damage.
+and now we have sustained damage.
 EOF
 # More cat command.
 cat << EOF
