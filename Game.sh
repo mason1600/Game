@@ -77,7 +77,7 @@ EOF
 # Typing level1 directly below the function calls that function named level1.
 level1
 # The echo command echos begin level two.
-echo "begin lvl 2"
+echo "Begin LvL 2"
 # This uses read to pause again till enter press.
 read fourth
 # This is the beginning of the second level.
@@ -279,7 +279,7 @@ level2
 level3(){
 
 	# This echos intro for lvl 3.
-	echo "welcome to LEVEL 3 i cant believe you made it this far"
+	echo "Welcome To LEVEL 3 I Can't Believe You Made It This Far!"
 	# The cat command again.
  	cat << EOF        
 			  BBBB
@@ -287,7 +287,7 @@ level3(){
      -X-a bird---->^V^  BBiiiiBB
       t                 BiiiiiB
 .........................iiiii.....
-A tree grows suddenly out of the dirt as a bird flys by weird?
+A Tree Grows Suddenly Out Of The Dirt As A Bird Flys By Weird?
 $BOBS_HEALTH Mana
 EOF
 # The read command.
@@ -296,11 +296,11 @@ read eighth
 cat << EOF        
                           BBBB
       o           i      BBiBBB
-     -X-a apple-->@     BBiiiiBB
+     -X-A Apple-->@     BBiiiiBB
       t                 BiiiiiB
 .........................iiiii.....
 $BOBS_HEALTH Mana
-The tree grabs the bird eats it and spits out a apple do you eat it? yes or no?
+The Tree Grabs The Bird Eats It and Spits Out A Apple Do You Eat It? yes or no?
 EOF
 # Using read to pause and ask.
 read NINTH
@@ -312,7 +312,7 @@ elif [[ $NINTH == no ]]; then
 ((BOBS_HEALTH -= 2))
 else
     # Answer does not exist, handle the situation (e.g., print an error).
-    echo "Error: $NINTH does not exist." "do to user error the app will close with press of enter"
+    echo "Error: $NINTH does not exist." "Do to USER Error the app will close with press of Enter."
     # Prints and error and holds user for them to read then closes with press of enter.
     read error
 # Another exit code.
@@ -322,7 +322,7 @@ fi
 # After any time subtraction is used on bobs health must check for death.
 # Less important at the beggining of the game, but need as you go deeper.
 if [ $BOBS_HEALTH -lt 1 ]; then
-echo "this is the end you have died"
+echo "This is the end you have died."
 read dededededed
 # This will exit if they are dead.
 exit
