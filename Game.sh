@@ -509,7 +509,9 @@ EOF
 read aa
 # A if then elif else fi conditional statement.
 if [ $aa == left ]; then
+# Subtracts health from bob.
 ((BOBS_HEALTH -= 30))
+# The cat command used again.
 cat << EOF 
 ....         ...................    .....
 ..... xxxxx....................... x......
@@ -522,10 +524,14 @@ $BOBS_HEALTH Mana
 $COIN Coins
 You fall into a pitfall and take substantial damage!
 EOF
+# The read command used to pause and ask.
 read cc
 elif [ $aa == right ]; then
+# Adds health to bob.
 ((BOBS_HEALTH += 4))
+# Adds coin.
 ((COIN += 1))
+# The cat command used again.
 cat << EOF 
 ..............................................
            xxxx                                 
@@ -539,8 +545,10 @@ $BOBS_HEALTH Mana
 $COIN Coins
 You go down a nice path and find fresh veggies and a coin.
 EOF
+# The read command.
 read dd
 elif [ $aa == forward ];  then
+# The cat command for nothing here.
 cat << EOF
 ...............................................
 
@@ -554,13 +562,18 @@ $COIN Coins
 ...............................................
 Its just a empty path? Ugh Sigh...
 EOF
+# The read command used again.
 read ee
 else echo "Invalid choice you lose."
+# The read again.
 read bb
+# A exit command for lack of focus.
 exit
+# This ends a if statement by typing fi.
 fi
 # Check for death.
 if [ $BOBS_HEALTH -lt 1 ]; then
+# A echo command used here.
 echo "This is the end you have died."
 read dededededed
 exit
