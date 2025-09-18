@@ -633,16 +633,22 @@ animation
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
+# This will use the echo command to inform user.
 else echo "No not a proper command."
+# This will pause using read.
 read ff
+# This will exit do to lack of focus.
 exit
+# This ends the if statement.
 fi
+# This calls the animation function.
 animation
 # This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
 # This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
+# The cat command used again.
 cat << EOF                                      
 $BOBS_HEALTH Mana
 $COIN Coins                                     
@@ -652,7 +658,9 @@ $COIN Coins
 ..........t...............jj...........
 Oh no this warrior wants to do battle!
 EOF
+# Using read to pause.
 read gg
+# The cat command again.
 cat << EOF                                      
 $BOBS_HEALTH Mana
 $COIN Coins                                     
@@ -663,8 +671,11 @@ $COIN Coins
 Prepare for battle!
 You do damage!
 EOF
+# Using read command to pause.
 read hh
+# This will minus 3 health from bob.
 ((BOBS_HEALTH -= 3 ))
+# The cat command used again.
 cat << EOF                                      
 $BOBS_HEALTH Mana
 $COIN Coins                                     
@@ -675,15 +686,21 @@ $COIN Coins
 Prepare for battle!
 He does damage!
 EOF
+# Using read to pause.
 read ii
 # Check for death.
 if [ $BOBS_HEALTH -lt 1 ]; then
-echo "this is the end you have died"
+# The echo command to inform user.
+echo "This is the end you have died."
+# The read command.
 read dededededed
+# The exit commnad used again.
 exit
 # Move on if still alive.
 else echo "still alive woot"
+# Ends the if statement.
 fi
+# The cat command used again.
 cat << EOF                                      
 $BOBS_HEALTH Mana
 $COIN Coins                                     
