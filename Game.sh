@@ -581,7 +581,9 @@ read dededededed
 exit
 # Move on if still alive.
 else echo "still alive woot"
+# This ends a if statement by typing fi.
 fi
+# This calls the animation function.
 animation
 # This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
 # This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
@@ -604,8 +606,11 @@ EOF
 read ee
 # A if conditional statement.
 if [ $ee == yes ]; then
+# This adds a coin.
 ((COIN += 1))
+# This adds to bobs health.
 ((BOBS_HEALTH += 1))
+# The cat command used again.
 cat << EOF
 
 $BOBS_HEALTH Mana
@@ -617,8 +622,11 @@ $COIN Coins                -X- Sun
 Its seems there is a coin and a crunchy pickle inside.
 I will take the coin and crunch the pickle.
 EOF
+# The read command to pause.
 read ff
+# Then else if no then animation.
 elif [ $ee == no ]; then 
+# The animation again.
 animation
 # This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
 # This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
