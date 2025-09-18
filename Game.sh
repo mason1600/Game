@@ -711,7 +711,9 @@ $COIN Coins
 Prepare for battle!
 You do damage!
 EOF
+# Using read to pause.
 read jj
+# The cat command again.
 cat << EOF                                      
 $BOBS_HEALTH Mana
 $COIN Coins                                     
@@ -722,7 +724,9 @@ $COIN Coins
 Prepare for battle!
 You do damage again!
 EOF
+# Using read to pause.
 read kk
+# The cat command.
 cat << EOF                                      
 $BOBS_HEALTH Mana
 $COIN Coins                                     
@@ -732,13 +736,16 @@ $COIN Coins
 ..........t...............jj...........
 He dies quick must have been a noob with no hax.
 EOF
+# Using read to pause.
 read ll
+# calls the animation.
 animation
 # This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
 # This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
+# The cat command to print again.
 cat << EOF        
 ............................                              
              .. . .  .  . .    
