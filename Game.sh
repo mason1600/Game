@@ -426,7 +426,7 @@ else
 fi
 # Check for death.
 if [ $BOBS_HEALTH -lt 1 ]; then
-echo "this is the end you have died"
+echo "This is the end you have died."
 read dededededed
 exit
 # Move on if still alive.
