@@ -694,7 +694,7 @@ if [ $BOBS_HEALTH -lt 1 ]; then
 echo "This is the end you have died."
 # The read command.
 read dededededed
-# The exit commnad used again.
+# The exit command used again.
 exit
 # Move on if still alive.
 else echo "still alive woot"
