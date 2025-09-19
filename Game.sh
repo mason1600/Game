@@ -756,9 +756,13 @@ $BOBS_HEALTH Mana
 $COIN Coins
 You come to a crossroads given a choice left right or forward?
 EOF
+# The read command used again.
 read aa
+# This is a if,then,elif,else,fi conditional statement.
 if [ $aa == right ]; then
+# This will minus 30 health from bob.
 ((BOBS_HEALTH -= 30))
+# This cats out the pitfall choice.
 cat << EOF 
 ....         ...................    .....
 ..... xxxxx....................... x......
@@ -771,10 +775,15 @@ $BOBS_HEALTH Mana
 $COIN Coins
 You fall into a pitfall and take substantial damage.
 EOF
+# Using read to hold.
 read cc
+# This is else if choice is left then.
 elif [ $aa == left ]; then
+# Adds 4 health to bob.
 ((BOBS_HEALTH += 4))
+# Adds 1 coin.
 ((COIN += 1))
+# This cats out nice path choice.
 cat << EOF 
 ..............................................
            xxxx                                 
@@ -788,8 +797,11 @@ $BOBS_HEALTH Mana
 $COIN Coins
 You go down a nice path and find fresh veggies and a coin.
 EOF
+# Using read to hold.
 read dd
+# This is else if choice is forward then.
 elif [ $aa == forward ];  then
+# This cats out nothing here choice.
 cat << EOF
 ...............................................
 
@@ -803,25 +815,36 @@ $COIN Coins
 ...............................................
 Its just a empty path? Ugh Sigh...
 EOF
+# Using read to pause.
 read ee
+# This is the else it will echo a invalid chosen choice to user part of if.
 else echo "Invalid choice you lose."
+# Using read to pause before exit.
 read bb
+# The exit command due to lack of focus.
 exit
+# Ends the if statement.
 fi
 # Check for death.
 if [ $BOBS_HEALTH -lt 1 ]; then
+# This echos the end for you.
 echo "This is the end you have died."
+# A read command to pause.
 read dededededed
+# This will exit after death check if ded.
 exit
 # Move on if still alive.
 else echo "still alive woot"
+# This ends the if for the death check.
 fi
+# This calls the animation function.
 animation
 # This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
 # This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
+# The cat command used for now what frame.
 cat << EOF 
 
 $BOBS_HEALTH Mana
