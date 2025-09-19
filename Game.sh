@@ -854,7 +854,9 @@ $COIN Coins
         -X-                         
 .........t........................
 EOF
+# This uses read to pause till press of enter.
 read kk
+# The cat command prints out ded fruit tree frame.
 cat << EOF        
                   @<--Fruit           
       o      t i tt         
@@ -865,13 +867,16 @@ $BOBS_HEALTH Mana
 $COIN Coins
 There is a ded tree with one fruit left on it do you eat it? yes or no?
 EOF
+# Using read to pause and ask.
 read FOURTEENTH
 # Then using a if then else statement to check.
 if [[ $FOURTEENTH == yes ]]; then
-    # Call it.
+    # Adds 2 health to bob.
    ((BOBS_HEALTH += 2))
 elif [[ $FOURTEENTH == no ]]; then
+# If its no then minus 1 health from bob.
 ((BOBS_HEALTH -= 1))
+# This will use else to echo choice does not exist.
 else
     # Function does not exist, handle the situation (e.g., print an error).
     echo "Error: $FOURTEENTH does not exist." "do to user error the app will close with press of enter"
@@ -889,7 +894,7 @@ exit
 # Move on if still alive.
 else echo "still alive woot"
 fi
-
+# The cat command for blah frame.
 cat << EOF        
                              
                    
