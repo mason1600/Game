@@ -905,7 +905,9 @@ $BOBS_HEALTH Mana
 $COIN Coins
 It didnt look toxic? We will move on either way..
 EOF
+# The read command used to pause.
 read mm
+# Calls the animation function.
 animation
 # This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
 # This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
