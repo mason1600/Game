@@ -1370,7 +1370,7 @@ cat << EOF
                      v   
       o              o  <--- hi im the DEV
      -X-            -x-   at this point
-......t..............j.the game is 1278 lines of code
+......t..............j.the game is 1373 lines of code
 $BOBS_HEALTH mana
 $COIN coins
 EOF
