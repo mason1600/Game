@@ -919,9 +919,13 @@ read -t .1 -n 1 dummytrap
 level4
 # This begins level five.
 level5(){
+# Using the echo command to inform user of level five start.
 echo "CONGRATSULATIONS YOU MADE IT TO LEVEL FIVE"
+# The read command will wait to start lvl 5 till enter press.
 read nn
+# This echos begin.
 echo "BEGIN LEVEL 5"
+# The sleep command will pause for 1 second before calling animation function.
 sleep 1
 animation
 # This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
@@ -929,6 +933,7 @@ animation
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
+# The cat command for cabin frames.
 cat << EOF        
           Bird      --.----------.--                      
          -vv-         .   AAAAAA .    t   t         
@@ -939,13 +944,16 @@ $BOBS_HEALTH Mana
 $COIN Coins
 Whats this? It looks like a cabin in the woods?
 EOF
+# The read to pause.
 read oo
+# This calls the animation function.
 animation
 # This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
 # This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
+# More use of the cat command.
 cat << EOF        
           Bird      --.----------.--                      
          -vv-         .   AAAAAA .    t   t         
@@ -956,10 +964,15 @@ $BOBS_HEALTH Mana
 $COIN Coins
 I swear I was just here,should I look around?yes or no?
 EOF
+# Using read to pause and ask.
 read pp
+# Going into an if conditional statement.
 if [ $pp == yes ]; then
+# This says if yes minus 3 health from bob.
 ((BOBS_HEALTH -= 3))
+# It will also add 3 coins.
 ((COIN += 3))
+# And it will cat this frame.
 cat << EOF        
           Bird      --.----------.--                      
          -vv-         .   AAAAAA .    t   t         
@@ -970,18 +983,26 @@ $BOBS_HEALTH Mana
 $COIN Coins
 You fell through the floor..It hurt but found 3 coins.
 EOF
+# And hold here till enter press.
 read rr
+# This says else if answer is no then.
 elif [ $pp == no ]; then
+# Do the animation instead.
 animation
 # This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
 # This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
+# Then if wrong choice it will use else to echo no not a command.
 else
-echo "not a command you lose loser very unforgiving game"
+# Like this.
+echo "Not a command you lose. Very unforgiving game.Sorry."
+# And hold till enter press.
 read qq
+# And since they lose the game it will exit with exit command.
 exit
+# This ends the if statement.
 fi
 # Check for death.
 if [ $BOBS_HEALTH -lt 1 ]; then
