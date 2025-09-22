@@ -1030,6 +1030,7 @@ $BOBS_HEALTH Mana
 $COIN Coins
 You come to a crossroads given a choice left right or forward?
 EOF
+# Using read to pause and ask for if conditional statement.
 read ss
 if [ $ss == forward ]; then
 ((BOBS_HEALTH -= 30))
