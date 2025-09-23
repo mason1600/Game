@@ -1034,7 +1034,9 @@ EOF
 read ss
 # This begins the if conditional statement.
 if [ $ss == forward ]; then
+# This will minus 30 health from bob.
 ((BOBS_HEALTH -= 30))
+# The cat command for pitfalls frame.
 cat << EOF 
 ....         ...................    .....
 ..... xxxxx....................... x......
@@ -1047,10 +1049,15 @@ $BOBS_HEALTH Mana
 $COIN Coins
 You fall into a pitfall and take substantial damage!
 EOF
+# The read command to pause.
 read cc
+# This says else if right then.
 elif [ $ss == right ]; then
+# This will add 4 health to bob.
 ((BOBS_HEALTH += 4))
+# This will give one coin to bob.
 ((COIN += 1))
+# The cat command used for nice path frame.
 cat << EOF 
 ..............................................
            xxxx                                 
@@ -1064,8 +1071,11 @@ $BOBS_HEALTH Mana
 $COIN Coins
 You go down a nice path and find fresh veggies and a coin.
 EOF
+# The read command used to pause.
 read dd
+# This says else if left then.
 elif [ $ss == left ];  then
+# This will cat out nothing here frame.
 cat << EOF
 ...............................................
 
@@ -1079,10 +1089,15 @@ $COIN Coins
 ...............................................
 Its just a empty path? Ugh Sigh...
 EOF
+# Using read to pause.
 read ee
+# And this says else echo invalid choice.
 else echo "Invalid choice you lose."
+# Using read to pause.
 read bb
+# This will exit do to invalid choice.
 exit
+# This ends the if statement.
 fi
 # Check for death.
 if [ $BOBS_HEALTH -lt 1 ]; then
@@ -1092,12 +1107,14 @@ exit
 # Move on if still alive.
 else echo "still alive woot"
 fi
+# Calls the animation again.
 animation
 # This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
 # This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
+# The cat command used again.
 cat << EOF
       o                   ..
      -X-                 ....
@@ -1107,7 +1124,9 @@ Oh its just a pile of hay.
 $BOBS_HEALTH Mana
 $COIN Coins
 EOF
+# Using read to pause.
 read tt
+# The cat command.
 cat << EOF 
                            ..       
                           ....       
@@ -1120,7 +1139,9 @@ Idk something felt strange about that pile of hay.
 $BOBS_HEALTH Mana
 $COIN Coins
 EOF
+# Using read to pause.
 read aaa
+# Again using cat.
 cat << EOF        
 			              
       o                  BBiBBB
@@ -1131,7 +1152,9 @@ Another tree near by as a bird flys.
 $BOBS_HEALTH Mana
 $COIN Coins
 EOF
+# Pause using read.
 read bbb
+# Using the cat command.
 cat << EOF        
                           BBBB
       o           i      BBiBBB
@@ -1142,6 +1165,7 @@ $BOBS_HEALTH Mana
 $COIN Coins
 The tree seems to have fruit eat it yes or no?
 EOF
+# Pause using read to ask.
 read ccc
 # Then using a if then else statement to check.
 if [[ $ccc == yes ]]; then
@@ -1167,6 +1191,7 @@ exit
 # Else it will continue with woot.
 else echo "still alive woot"
 fi
+# The cat command used again.
 cat << EOF        
                           BBBB
       o                  BBiBBB
@@ -1177,6 +1202,7 @@ $BOBS_HEALTH Mana
 $COIN Coins
 The result of either eating the apple or not is?good or bad?
 EOF
+# Using read to pause and ask.
 read ddd
 # Then using a if then else statement to check.
 if [[ $ddd == good ]]; then
@@ -1195,6 +1221,7 @@ else
     exit
 # Ends the if statement by typing if backwards or fi.
 fi
+# The cat command used again.
 cat << EOF        
                              BBBB
       o      t i tt         BBiBBB
@@ -1205,14 +1232,18 @@ $BOBS_HEALTH Mana
 $COIN Coins
 We now continue on our path to whereever we are going-->
 EOF
+# Using read to pause.
 read eee
+# Call the animation.
 animation
 # This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
 # This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
+# Adds one coin to bob.
 ((COIN += 1))
+# The cat command for coin found frame.
 cat << EOF        
                           
       o                  
@@ -1223,13 +1254,16 @@ $BOBS_HEALTH Mana
 $COIN Coins
 Hey you found another coin awsome!
 EOF
+# Using read to pause.
 read fff
+# This calls the animation function again.
 animation
 # This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
 # This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
+# The cat command for ded tree frame.
 cat << EOF        
                   @<--Fruit           
       o      t i tt         
@@ -1240,6 +1274,7 @@ $BOBS_HEALTH Mana
 $COIN Coins
 There is a ded tree with one fruit left on it do you eat it? yes or no?
 EOF
+# Using read to pause and ask.
 read ggg
 # Then using a if then else statement to check.
 if [[ $ggg == yes ]]; then
@@ -1264,6 +1299,7 @@ exit
 # Move on if still alive.
 else echo "still alive woot"
 fi
+# The cat command used for blah vomit frame.
 cat << EOF        
                              
                    
@@ -1274,7 +1310,9 @@ $BOBS_HEALTH Mana
 $COIN Coins
 It was extremly toxic if you ate it other wise hunger takes 1 health anyway.
 EOF
+# Using read command to pause.
 read hhh
+# The cat command.
 cat << EOF                                      
 $BOBS_HEALTH mana
 $COIN coins                                     
