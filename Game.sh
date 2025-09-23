@@ -2690,6 +2690,77 @@ $COIN coins
 The Cave Seems Stable At The Moment Hopefully No More Quakes.
 EOF
 read lllll
+cavedweller(){
+cat << EOF
+...................................................
+     V       v                    V      v
+     V                            v
+                               
+                       o      
+                      -X-A     -0-<-Angry Dweller     
+.......................t........j.....A..............
+$BOBS_HEALTH mana
+$COIN coins
+An angry dweller appears!
+EOF
+read mmmmm
+angryshealth=50
+while true; do
+((BOBS_HEALTH -= 1))
+cat << EOF
+...................................................
+     V       v                    V      v
+     V                            v
+                       1dmg       
+                       o        $angryshealth DwellHealth
+                      -X-A     -0-<-Angry Dweller     
+.......................t........j.....A..............
+$BOBS_HEALTH mana
+$COIN coins
+He Attacks!
+EOF
+read nnnnn
+# Check for death.
+if [ $BOBS_HEALTH -lt 1 ]; then
+echo "this is the end you have died"
+read dededededededed
+exit
+# Move on if still alive.
+else echo "still alive woot"
+fi
+((angryshealth -= 7))
+cat << EOF
+...................................................
+     V       v                    V      v
+     V                            v
+                                7dmg
+                       o        $angryshealth DwellHealth
+                      -X-A     -0-<-Angry Dweller     
+.......................t........j.....A..............
+$BOBS_HEALTH mana
+$COIN coins
+You Attack!
+EOF
+read ooooo
+if [[ $angryshealth -le 0 ]]; then
+            break
+             fi
+done
+}
+cavedweller
+cat << EOF
+...................................................
+     V       v                    V      v
+     V                            v
+                               
+                       0     
+                      -X-A<-Crystal          
+.......................t.............A..............
+$BOBS_HEALTH mana
+$COIN coins
+The Cave Seems Calm At The Moment Hopefully No More Angry Dwellers!
+EOF
+read ppppp
 }
 level8
 
