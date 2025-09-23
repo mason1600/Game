@@ -1032,6 +1032,7 @@ You come to a crossroads given a choice left right or forward?
 EOF
 # Using read to pause and ask for if conditional statement.
 read ss
+# This begins the if conditional statement.
 if [ $ss == forward ]; then
 ((BOBS_HEALTH -= 30))
 cat << EOF 
