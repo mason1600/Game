@@ -1475,8 +1475,10 @@ read ppp
 # I wanted to include a good mix of both 'if' and 'case' statements for anyone trying to learn both for reference.
 case $ppp in 
         yes)
-    ((BOBS_HEALTH += 2))
-    cat << EOF        
+    # This adds 2 health to bob.
+	((BOBS_HEALTH += 2))
+    # The cat command used again.
+	cat << EOF        
           Bird      --.----------.--                      
          -vv-         .   AAAAAA .    t   t         
       o               .   A| |A  .    t  t       
@@ -1487,6 +1489,7 @@ $COIN Coins
 I found some fruit on the ground under the tree it wasnt bad yet.
 Nom nom.
 EOF
+# Using read to pause.
 read qqq
     # Do NOT FORGET your double semis in-between choices or prepare for confusion and madness when testing lol.
 	;;
