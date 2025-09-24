@@ -1322,7 +1322,9 @@ $COIN Coins
 ..........t...............jj...........
 Oh no a war mage wants to do battle!
 EOF
+# Using read to pause.
 read iii
+# The cat command used again.
 cat << EOF                                      
 $BOBS_HEALTH Mana
 $COIN Coins                                     
@@ -1333,8 +1335,11 @@ $COIN Coins
 Prepare for battle!
 You do damage!
 EOF
+# Using read to pause.
 read jjj
+# This will minus 4 health from bob.
 ((BOBS_HEALTH -= 4 ))
+# The cat command used again.
 cat << EOF                                      
 $BOBS_HEALTH Mana
 $COIN Coins                                     
@@ -1345,6 +1350,7 @@ $COIN Coins
 Prepare for battle!
 He does damage!
 EOF
+# Using read to pause.
 read kkk
 # Check for death.
 if [ $BOBS_HEALTH -lt 1 ]; then
@@ -1354,6 +1360,7 @@ exit
 # Move on if still alive.
 else echo "still alive woot"
 fi
+# The cat command used again.
 cat << EOF                                      
 $BOBS_HEALTH Mana
 $COIN Coins                                     
@@ -1364,7 +1371,9 @@ $COIN Coins
 Prepare for battle!
 You do damage!
 EOF
+# Using read to pause.
 read lll
+# The cat command used again.
 cat << EOF                                      
 $BOBS_HEALTH Mana
 $COIN Coins                                     
@@ -1375,7 +1384,9 @@ $COIN Coins
 Prepare for battle!
 You do damage again!
 EOF
+# Using read to pause.
 read mmm
+# The cat command used again.
 cat << EOF                                      
 $BOBS_HEALTH Mana
 $COIN Coins                                     
@@ -1385,44 +1396,55 @@ $COIN Coins
 ..........t...............jj...........
 He dies quick must have been a nUbZor lawl.
 EOF
+# Using read to pause.
 read nnn
+# This calls the animation function.
 animation
 # This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
 # This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
+# This echos lvl 5 end inbetween animations.
 echo "Level Five End!"
-
 }
+# This calls level5 function.
 level5
+# This calls animation function again.
 animation
 # This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
 # This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
+# This echos that you have made it to lvl 6.
 echo "YOU HAVE NOW MADE IT TO LEVEL SIX"
+# This will use read to pause till enter press.
 read ooo
+# The cat command used again.
 cat << EOF
 
                      v   
       o              o  <--- Hi im the DEV
      -X-            -x-   at this point
-......t..............j.the game is 1412 lines of code.
+......t..............j.the game is 1430 lines of code.
 $BOBS_HEALTH Mana
 $COIN Coins
 EOF
 # The read command used to pause.
 read seventeen
+# This creates level6 function.
 level6(){
+# This echos begin lvl 6.
 echo "Begin Level 6"
+# This calls the animation again.
 animation
 # This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
 # This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
+# The cat command used again.
 cat << EOF
 
               @
@@ -1433,7 +1455,9 @@ $BOBS_HEALTH Mana
 $COIN Coins
 A small tree grows near by.
 EOF
+# Using read to pause.
 read ppp
+# The cat command used again.
 cat << EOF        
           Bird      --.----------.--                      
          -vv-         .   AAAAAA .    t   t         
@@ -1445,6 +1469,7 @@ $COIN Coins
 Whats this it looks like that cabin again?
 Should i look around see if i missed anything? yes or no.
 EOF
+# Using read to pause and ask for first case conditional statement.
 read ppp
 # This is the first introduction of a case conditional statement.
 # I wanted to include a good mix of both 'if' and 'case' statements for anyone trying to learn both for reference.
