@@ -1336,54 +1336,54 @@ EOF
 read jjj
 ((BOBS_HEALTH -= 4 ))
 cat << EOF                                      
-$BOBS_HEALTH mana
-$COIN coins                                     
+$BOBS_HEALTH Mana
+$COIN Coins                                     
          4 dmg                  
           o              Q o            
          -X-             T-X-O              
 ..........t...............jj...........
-prepare for battle
-he does damage
+Prepare for battle!
+He does damage!
 EOF
 read kkk
 # Check for death.
 if [ $BOBS_HEALTH -lt 1 ]; then
-echo "this is the end you have died"
+echo "This is the end you have died."
 read dededededed
 exit
 # Move on if still alive.
 else echo "still alive woot"
 fi
 cat << EOF                                      
-$BOBS_HEALTH mana
-$COIN coins                                     
+$BOBS_HEALTH Mana
+$COIN Coins                                     
                  $(($RANDOM % 5 + 1))dmg           
           o              Q o            
          -X-             T-X-O              
 ..........t...............jj...........
-prepare for battle
-you do damage
+Prepare for battle!
+You do damage!
 EOF
 read lll
 cat << EOF                                      
-$BOBS_HEALTH mana
-$COIN coins                                     
+$BOBS_HEALTH Mana
+$COIN Coins                                     
                  $(($RANDOM % 5 + 1))dmg           
           o              Q o            
          -X-             T-X-O              
 ..........t...............jj...........
-prepare for battle
-you do damage again
+Prepare for battle!
+You do damage again!
 EOF
 read mmm
 cat << EOF                                      
-$BOBS_HEALTH mana
-$COIN coins                                     
+$BOBS_HEALTH Mana
+$COIN Coins                                     
                            
-          o               dead             
-         -X-             oxg  mage            
+          o               Dead             
+         -X-             oxg  Mage            
 ..........t...............jj...........
-he dies quick must have been a nUbZor lawl
+He dies quick must have been a nUbZor lawl.
 EOF
 read nnn
 animation
@@ -1392,7 +1392,7 @@ animation
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
-echo "level five end"
+echo "Level Five End!"
 
 }
 level5
@@ -1407,16 +1407,16 @@ read ooo
 cat << EOF
 
                      v   
-      o              o  <--- hi im the DEV
+      o              o  <--- Hi im the DEV
      -X-            -x-   at this point
-......t..............j.the game is 1373 lines of code
-$BOBS_HEALTH mana
-$COIN coins
+......t..............j.the game is 1412 lines of code.
+$BOBS_HEALTH Mana
+$COIN Coins
 EOF
-
+# The read command used to pause.
 read seventeen
 level6(){
-echo "begin level 6"
+echo "Begin Level 6"
 animation
 # This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
 # This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
@@ -1429,21 +1429,21 @@ cat << EOF
      o       @@@
     -X-       q
 .....t........q.............
-$BOBS_HEALTH mana
-$COIN coins
-a small tree grows near by
+$BOBS_HEALTH Mana
+$COIN Coins
+A small tree grows near by.
 EOF
 read ppp
 cat << EOF        
-          bird      --.----------.--                      
+          Bird      --.----------.--                      
          -vv-         .   AAAAAA .    t   t         
       o               .   A| |A  .    t  t       
-     -X-        cabin>.   A| |A  .     tree <-         
+     -X-        Cabin>.   A| |A  .     Tree <-         
 ......t...................A|.|A........t.......
-$BOBS_HEALTH mana
-$COIN coins
-whats this it looks like that cabin again?
-should i look around see if i missed anything?yes or no.
+$BOBS_HEALTH Mana
+$COIN Coins
+Whats this it looks like that cabin again?
+Should i look around see if i missed anything? yes or no.
 EOF
 read ppp
 # This is the first introduction of a case conditional statement.
@@ -1452,15 +1452,15 @@ case $ppp in
         yes)
     ((BOBS_HEALTH += 2))
     cat << EOF        
-          bird      --.----------.--                      
+          Bird      --.----------.--                      
          -vv-         .   AAAAAA .    t   t         
       o               .   A| |A  .    t  t       
-     -X-        cabin>.   A| |A  .     tree <-         
+     -X-        Cabin>.   A| |A  .     Tree <-         
 ......t...................A|.|A........t.......
-$BOBS_HEALTH mana
-$COIN coins
-i found some fruit on the ground under the tree it wasnt bad yet
-nom nom
+$BOBS_HEALTH Mana
+$COIN Coins
+I found some fruit on the ground under the tree it wasnt bad yet.
+Nom nom.
 EOF
 read qqq
     # Do NOT FORGET your double semis in-between choices or prepare for confusion and madness when testing lol.
@@ -1476,32 +1476,31 @@ read qqq
     ;;
     # This word esac or case backwards ends the case statement.
 	esac
-	
-	cat << EOF
-
-$BOBS_HEALTH mana
-$COIN coins                -X- sun                     
+# The cat command used again.
+cat << EOF
+$BOBS_HEALTH Mana
+$COIN Coins                -X- Sun                     
                                       
-    o                   c   chest            
+    o                   c   Chest            
    -X-                j---j                   
 ....t..................---.................
-whats this ? oh a treasure chest i think?
-should i open it?yes or no?
+Whats this? Oh a treasure chest i think?
+Should i open it? yes or no?
 EOF
 read rrr
 if [ $rrr == yes ]; then
 ((COIN += 1))
 ((BOBS_HEALTH += 1))
+# The cat command used again.
 cat << EOF
-
-$BOBS_HEALTH mana
-$COIN coins                -X- sun                     
+$BOBS_HEALTH Mana
+$COIN Coins                -X- Sun                     
                                       
-                      o   - chest open            
+                      o   - Chest Open            
                      -X- i@ -j                   
 .............. .......t.---.................
-its seems there is a coin and a crunchy pickle inside
-i will take the coin and crunch the pickle
+Its seems there is a coin and a crunchy pickle inside.
+I will take the coin and crunch the pickle.
 EOF
 read pauseagin
 elif [ $rrr == no ]; then 
@@ -1511,33 +1510,32 @@ animation
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
-else echo "no not a proper command"
+else echo "No not a proper command."
 read ggg
 exit
 fi
-
+# The cat command used again.
 cat << EOF
               @
              @@@
      o        q
     -X-       q
 .....t........q.............
-$BOBS_HEALTH mana
-$COIN coins
-a small tree grows near by but it seems taller this time
+$BOBS_HEALTH Mana
+$COIN Coins
+A small tree grows near by but it seems taller this time.
 EOF
 read sss
-
+# The cat command used again.
 cat << EOF        
 ............................                              
              .. . .  .  . .    
       o    . .<-left right->or forward          
      -X- . .  . . .  .   .     
 ......t......................
-$BOBS_HEALTH mana
-$COIN coins
-you come to a crossroads given a choice left right or forward
-
+$BOBS_HEALTH Mana
+$COIN Coins
+You come to a crossroads given a choice left right or forward?
 EOF
 read ttt
 if [ $ttt == forward ]; then
@@ -1547,12 +1545,12 @@ cat << EOF
 ..... xxxxx....................... x......
 .....  xxxx....xxxxxxx..... xx.......   ..
 ..................................xxxx......
-..o..ouch...pitfalls.............xxxxx.......
+..o..Ouch...Pitfalls.............xxxxx.......
 .-X-....... xxxx..... xxxxxx.................
 ..t..  xxxxx ................................
-$BOBS_HEALTH mana
-$COIN coins
-you fall into a pitfall and take substantial damage
+$BOBS_HEALTH Mana
+$COIN Coins
+You fall into a pitfall and take substantial damage!
 EOF
 read uuu
 elif [ $ttt == right ]; then
@@ -1561,39 +1559,39 @@ elif [ $ttt == right ]; then
 cat << EOF 
 ..............................................
            xxxx                                 
-            i <-tree                  @  <-coin            
+            i <-Tree                  @  <-Coin            
             i                                  
                                             
      o                           q qqq             
-    -X-                          qqq   <-veggies            
+    -X-                          qqq   <-Veggies            
 .....t...........................................
-$BOBS_HEALTH mana
-$COIN coins
-you go down a nice path and find fresh veggies and a coin
+$BOBS_HEALTH Mana
+$COIN Coins
+You go down a nice path and find fresh veggies and a coin.
 EOF
 read vvv
 elif [ $ttt == left ];  then
 cat << EOF
 ...............................................
 
-      o -...> theres nothing here
+      o -...> Theres nothing here...
      -X-
       t
                           
-$BOBS_HEALTH mana
-$COIN coins
+$BOBS_HEALTH Mana
+$COIN Coins
                       
 ...............................................
-its just a empty path? ugh sigh...
+Its just a empty path? Ugh Sigh...
 EOF
 read www
-else echo "invalid choice you lose"
+else echo "Invalid choice you lose!"
 read xxx
 exit
 fi
 # Check for death.
 if [ $BOBS_HEALTH -lt 1 ]; then
-echo "this is the end you have died"
+echo "This is the end you have died."
 read dedededededed
 exit
 # Move on if still alive.
