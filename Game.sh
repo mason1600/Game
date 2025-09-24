@@ -1314,24 +1314,24 @@ EOF
 read hhh
 # The cat command.
 cat << EOF                                      
-$BOBS_HEALTH mana
-$COIN coins                                     
+$BOBS_HEALTH Mana
+$COIN Coins                                     
                                         
           o              Q o            
          -X-             T-X-O              
 ..........t...............jj...........
-oh no a war mage wants to do battle
+Oh no a war mage wants to do battle!
 EOF
 read iii
 cat << EOF                                      
-$BOBS_HEALTH mana
-$COIN coins                                     
+$BOBS_HEALTH Mana
+$COIN Coins                                     
                  $(($RANDOM % 5 + 1))dmg           
           o              Q o            
          -X-             T-X-O              
 ..........t...............jj...........
-prepare for battle
-you do damage
+Prepare for battle!
+You do damage!
 EOF
 read jjj
 ((BOBS_HEALTH -= 4 ))
