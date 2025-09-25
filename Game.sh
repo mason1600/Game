@@ -1534,17 +1534,24 @@ $COIN Coins                -X- Sun
 Its seems there is a coin and a crunchy pickle inside.
 I will take the coin and crunch the pickle.
 EOF
+# The read command to pause.
 read pauseagin
+# This says else if no then.
 elif [ $rrr == no ]; then 
+# Do the animation instead.
 animation
 # This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
 # This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
+# Else it will echo no not proper.
 else echo "No not a proper command."
+# Use read to pause.
 read ggg
+# And then exit for loss do to inproper command usage.
 exit
+# Ends the if statement.
 fi
 # The cat command used again.
 cat << EOF
