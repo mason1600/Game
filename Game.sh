@@ -1515,9 +1515,13 @@ $COIN Coins                -X- Sun
 Whats this? Oh a treasure chest i think?
 Should i open it? yes or no?
 EOF
+# The read command used to pause and ask for if statement.
 read rrr
+# Start of if statement says if yes then.
 if [ $rrr == yes ]; then
+# Add one coin.
 ((COIN += 1))
+# Add 1 health.
 ((BOBS_HEALTH += 1))
 # The cat command used again.
 cat << EOF
