@@ -1564,6 +1564,7 @@ $BOBS_HEALTH Mana
 $COIN Coins
 A small tree grows near by but it seems taller this time.
 EOF
+# The read command used to pause.
 read sss
 # The cat command used again.
 cat << EOF        
@@ -1576,9 +1577,13 @@ $BOBS_HEALTH Mana
 $COIN Coins
 You come to a crossroads given a choice left right or forward?
 EOF
+# Using read to pause and ask for if statement.
 read ttt
+# This says if forward then.
 if [ $ttt == forward ]; then
+# Minus 30 health from bob.
 ((BOBS_HEALTH -= 30))
+# And cat out pitfall frame.
 cat << EOF 
 ....         ...................    .....
 ..... xxxxx....................... x......
@@ -1591,10 +1596,15 @@ $BOBS_HEALTH Mana
 $COIN Coins
 You fall into a pitfall and take substantial damage!
 EOF
+# And use read to pause before moving on.
 read uuu
+# Says else if right then.
 elif [ $ttt == right ]; then
+# Add 4 health to bob.
 ((BOBS_HEALTH += 4))
+# And add 1 coin.
 ((COIN += 1))
+# Also cat out nice path frame.
 cat << EOF 
 ..............................................
            xxxx                                 
@@ -1608,8 +1618,11 @@ $BOBS_HEALTH Mana
 $COIN Coins
 You go down a nice path and find fresh veggies and a coin.
 EOF
+# Using read to pause before moving on.
 read vvv
+# Says else if left then.
 elif [ $ttt == left ];  then
+# It will cat out nothing here frame.
 cat << EOF
 ...............................................
 
@@ -1623,10 +1636,15 @@ $COIN Coins
 ...............................................
 Its just a empty path? Ugh Sigh...
 EOF
+# And read to pause before moving on.
 read www
+# Says else it will echo loss of game.
 else echo "Invalid choice you lose!"
+# Use read to pause.
 read xxx
+# And exit due to loss of game.
 exit
+# Ends the if statement.
 fi
 # Check for death.
 if [ $BOBS_HEALTH -lt 1 ]; then
