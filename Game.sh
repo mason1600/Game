@@ -1653,7 +1653,9 @@ read dedededededed
 exit
 # Move on if still alive.
 else echo "still alive woot"
+# Ends if statement for death-check.
 fi
+# Calls the animation again.
 animation
 # This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
 # This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
