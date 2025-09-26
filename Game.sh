@@ -1992,6 +1992,7 @@ Alright, im inside, and i am goin deeper down in the hole...
 EOF
 # Using read to pause before another new animation called the 'fall'.
 read jjjj
+# This is the first introduction of the third animation in the game called fall created as a function.
 fall(){
 cat << EOF
 ...........................| o|..................
@@ -2044,26 +2045,30 @@ cat << EOF
 EOF
 sleep .4
 }
+# This function is only called one time.
 fall
 # This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
 # This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
+# The cat command once inside cave.
 cat << EOF
 ...........................|  |..................
      V       v             |  |   V      v
-     V <-stalagtight       |  |          v
+     V <-Stalagtight       |  |          v
                            |  |
    o                       |  |
-  -X-                      |  |      A <-stalagmight  
+  -X-                      |  |      A <-Stalagmight  
 ...t.......................,,,,......A..............
-$BOBS_HEALTH mana
-$COIN coins
+$BOBS_HEALTH Mana
+$COIN Coins
 Alright, im inside what looks like a cave of some sort...
 I was careful coming down this time so i did not take any damage..
 EOF
+# Using read to pause.
 read kkkk
+# The cat command used again for light crystal frame.
 cat << EOF
 ...................................................
      V       v                    V      v
@@ -2072,12 +2077,14 @@ cat << EOF
                        o    A<-Crystal Of Light
                       -X-  VVV        A   
 .......................t....V.........A..............
-$BOBS_HEALTH mana
-$COIN coins
+$BOBS_HEALTH Mana
+$COIN Coins
 Lucky That This Crystal Is Here Or I Would Not Be Able To See At All.
 I Guess I Will ConTinue Searching Down Here In This Cool Cave.
 EOF
+# Using read to pause again.
 read llll
+# The cat command again.
 cat << EOF
 ...................................................
      V       v                    V      v
@@ -2086,11 +2093,12 @@ cat << EOF
                        o     <-Crystal Of Light
                       -X-A VVV        A   
 .......................t....V.........A..............
-$BOBS_HEALTH mana
-$COIN coins
+$BOBS_HEALTH Mana
+$COIN Coins
 I Broke A Peice Of The Crystal Off So I Can Continue To See Down Here.
 Great Idea Right lol...
 EOF
+# Using read to pause before yet another new animation.yay.
 read mmmm
 caveani(){
 cat << EOF
