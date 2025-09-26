@@ -1852,6 +1852,7 @@ exit
 # Move on if still alive.
 else echo "still alive woot"
 fi
+# This is the first introduction of the second animation for the game.
 animation2(){
 	cat << EOF
 
@@ -1941,6 +1942,7 @@ sleep .5
 EOF
 sleep .5
 }
+# I will admit it probaly does not need to be called 3 times but ill leave it that way for now.
 animation2
 animation2
 animation2
@@ -1949,40 +1951,46 @@ animation2
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
+# The cat command saying i am getting somewhere after the long new animation lol.
 cat << EOF
               @
              @@@
-     o        q    -v-bird
+     o        q    -v-Bird
     -X-       q
 .....t........q.............
-$BOBS_HEALTH mana
-$COIN coins
-i really feel like i am getting somewhere i swear
+$BOBS_HEALTH Mana
+$COIN Coins
+I really feel like i am getting somewhere i swear!
 EOF
+# Using read to pause.
 read hhhh
+# The cat command used for ah i have an idea about holes in floors.
 cat << EOF        
-          bird      --.----------.--                      
+          Bird      --.----------.--                      
          -vv-         .   AAAAAA .    t   t         
                o      .   A| |A  .    t  t       
-              -X-cabn>.   A| |A  .     tree <-         
+              -X-Cabn>.   A| |A  .     Tree <-         
 ...............t..........A|.|A........t.......
-$BOBS_HEALTH mana
-$COIN coins
+$BOBS_HEALTH Mana
+$COIN Coins
 Ah its this place, I have an Idea about that hole in the floor..
 EOF
+# Using read to pause.
 read iiii
+# The cat command for inside cabin frame.
 cat << EOF        
-          bird      --.----------.--                      
+          Bird      --.----------.--                      
          -vv-         .          .    t   t         
-              inside  .   o      .    t  t       
-                 cabn>.  -X-     .     tree <-         
+              Inside  .   o      .    t  t       
+                 Cabn>.  -X-     .     Tree <-         
 ..........................t|  |..........t.......
                            |  |
                            |  |
-$BOBS_HEALTH mana
-$COIN coins
-Alright, im inside, and i am goin deeper down in the hole..
+$BOBS_HEALTH Mana
+$COIN Coins
+Alright, im inside, and i am goin deeper down in the hole...
 EOF
+# Using read to pause before another new animation called the 'fall'.
 read jjjj
 fall(){
 cat << EOF
