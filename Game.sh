@@ -1662,6 +1662,7 @@ animation
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
+# The cat command used again.
 cat << EOF
               @
              @@@
@@ -1669,56 +1670,64 @@ cat << EOF
      o        q
     -X-       q
 .....t........q.............
-$BOBS_HEALTH mana
-$COIN coins
-a small tree grows near by but it seems even taller this time?
-wait a minute i think i see something up there..
+$BOBS_HEALTH Mana
+$COIN Coins
+A small tree grows near by but it seems even taller this time?
+Wait a minute i think i see something up there...
 EOF
+# The read command to pause.
 read yyy
+# The cat command used again.
 cat << EOF
               @
              @@@
               q
               q
- hmmm..    o  q
+ Hmmm..    o  q
           -X- q
 ...........t..q.............
-$BOBS_HEALTH mana
-$COIN coins
-i am not really sure how i could get up there?
+$BOBS_HEALTH Mana
+$COIN Coins
+I am not really sure how i could get up there?
 EOF
+# Using read to pause.
 read zzz
+# The cat command used for to tall frame.
 cat << EOF
               @
              @@@
               q
               q
-              q     o to tall....
+              q     o To Tall....
               q    -X-
 ........... ..q.....t.......
-$BOBS_HEALTH mana
-$COIN coins
-oh well maybe another time
+$BOBS_HEALTH Mana
+$COIN Coins
+Oh well maybe another time.
 EOF
+# Using read to pause.
 read aaaa
+# Calls the animation again.
 animation
 # This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
 # This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
+# The cat command for chest frame.
 cat << EOF
-
-$BOBS_HEALTH mana
-$COIN coins                -X- sun                     
+$BOBS_HEALTH Mana
+$COIN Coins                -X- Sun                     
                                       
-    o                   c   chest            
+    o                   c   Chest            
    -X-                j---j                   
 ....t..................---.................
-whats this ? oh a treasure chest i think?
-should i open it?yes or no?
+Whats this ? Oh a treasure chest i think?
+Should i open it?yes or no?
 EOF
+# Using read to pause for if statement.
 read bbbb
+# Start of if statement.
 if [ $bbbb == yes ]; then
 ((COIN += 1))
 ((BOBS_HEALTH += 2))
