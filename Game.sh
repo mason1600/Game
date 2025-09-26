@@ -1729,26 +1729,41 @@ EOF
 read bbbb
 # Start of if statement.
 if [ $bbbb == yes ]; then
+# Adds one coin.
 ((COIN += 1))
+# Adds two health to bob.
 ((BOBS_HEALTH += 2))
+# The cat command for chest open.
 cat << EOF
-
-$BOBS_HEALTH mana
-$COIN coins                -X- sun                     
+$BOBS_HEALTH Mana
+$COIN Coins                -X- Sun                     
                                       
-  sic its a burger    o   - chest open            
+  Sic its a burger    o   - Chest Open            
                      -X- @@ -j                   
 .............. .......t.---.................
-its seems there is a coin and a juicy Burger
-i will take the coin and demolish this burg
+Its seems there is a coin and a juicy Burger!
+I will take the coin and demolish this burg!
 EOF
+# The read command to pause again.
 read pausaginn
+# Says else if no then.
 elif [ $bbbb == no ]; then 
+# Do the animation instead.
 animation
+# This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
+# This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
+# Says else echo no not proper.
 else echo "no not a proper command"
+# Using read to pause.
 read cccc
+# Using exit command to close due to improper command usage.
 exit
+# Ends the if statement.
 fi
+# The cat command for creature frame.
 cat << EOF 
                            ..       
                           ....       
