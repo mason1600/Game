@@ -2100,6 +2100,7 @@ Great Idea Right lol...
 EOF
 # Using read to pause before yet another new animation.yay.
 read mmmm
+# This is the first introduction of the fourth animation called caveani as a function.
 caveani(){
 cat << EOF
 ...................................................
@@ -2152,13 +2153,16 @@ cat << EOF
 EOF
 sleep .4
 }
+# Calls the new animation.
 caveani
 # This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
 # This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
+# This will minus four health from bob due to hunger.
 ((BOBS_HEALTH -= 4 ))
+# This cats out hungry frame.
 cat << EOF
 ...................................................
      V       v                    V      v
@@ -2167,11 +2171,12 @@ cat << EOF
                        o     
                       -X-A           
 .......................t.............A..............
-$BOBS_HEALTH mana
-$COIN coins
+$BOBS_HEALTH Mana
+$COIN Coins
 Ugh...I Am Getting Hungry Mana Reserve Dropping..Gotta Figure Something Out.
 I Hope That Nothing Spooky Is Down Here Hiding In The Shadows..!
 EOF
+# Using read to pause.
 read nnnn
 # Check for death.
 if [ $BOBS_HEALTH -lt 1 ]; then
@@ -2182,40 +2187,43 @@ exit
 else echo "still alive woot"
 fi
 }
+# This calls level7 function.
 level7
 # Ends Level 7.
-
-echo 'end of LeveL Seven7'
+# This echos end of level 7.
+echo 'End of LeveL Seven7'
+# Using read to pause.
 read oooo
-
+# The echo command.
 echo 'I Hope You Are Feeling Great And Ready For LeveL 8Eight8'
+# Using read to pause.
 read pppp
-
-# Begins Level Eight8.
+# Begins Level Eight8 created as a function.
 level8(){
-
+# Starts level 8 off with caveani function.
 caveani
 # This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
 # This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
-
+# The cat command.
 cat << EOF
 ...................................................
      V       v                    V      v
      V                            v
                                
                        o     
-                      -X-A     -0-<-weird creature     
+                      -X-A     -0-<-Weird creature     
 .......................t........j.....A..............
-$BOBS_HEALTH mana
-$COIN coins
+$BOBS_HEALTH Mana
+$COIN Coins
 A Weird Creature Offers To Bring You Some Food For One Shiny Coin.
 Would You Like To Give A Coin For Some Food? yes or no?
 EOF
+# Using read to pause before case statement.
 read qqqq
-
+# The beginning of a case conditional statement.
 case $qqqq in
     yes)
         (( COIN -= 1 ))
