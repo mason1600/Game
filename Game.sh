@@ -1767,64 +1767,82 @@ fi
 cat << EOF 
                            ..       
                           ....       
-            creature-->%j......       
+            Creature-->%j......       
   0                  **,,,......             
  -X-                  ...........                
   t                  ..............              
 ..................................
-its that weird pile of hay again better stay back.. 
-$BOBS_HEALTH mana
-$COIN coins
+Its that weird pile of hay again better stay back...
+$BOBS_HEALTH Mana
+$COIN Coins
 EOF
+# Using read to pause.
 read dddd
+# This will echo level six end.
 echo "Level Six End"
+# This will pause for .4 seconds.
 sleep .4
 }
+# This calls level6 function.
 level6
+# This echos you made it.yay.
 echo "YOU HAVE NOW MADE IT TO LEVEL SEVEN"
+# Using read to pause.
 read eeee
+# This creates level7 as a function a script within a script so to speak.
 level7(){
+# This calls the animation function.
 animation
 # This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
 # This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
+# The cat command for chest.
 cat << EOF
-
-$BOBS_HEALTH mana
-$COIN coins                -X- sun                     
+$BOBS_HEALTH Mana
+$COIN Coins                -X- Sun                     
                                       
-    o                   c   chest            
+    o                   c   Chest            
    -X-                j---j                   
 ....t..................---.................
-whats this ? oh a treasure chest i think?
-should i open it?yes or no?
+Whats this? Oh a treasure chest i think?
+Should i open it? yes or no?
 EOF
+# Using read to pause and ask for if statement.
 read ffff
+# Beginning of if statement says if yes then.
 if [ $ffff == yes ]; then
+# Minus 2 health from bob.
 ((BOBS_HEALTH -= 2))
+# And cat this frame boom bomb.
 cat << EOF
-
-$BOBS_HEALTH mana
-$COIN coins                -X- sun                     
+$BOBS_HEALTH Mana
+$COIN Coins                -X- Sun                     
                                       
-  ouch it was a bomb  o   - chest open            
+  Ouch it was a bomb  o   - Chest Open            
                      -X- -@ -j                   
 .............. .......t.---.................
-it was a small bomb only did 2 damage.
+It was a small bomb only did 2 damage!
 EOF
+# Using read to pausaaginnn.
 read pausaginnn
+# Says else if no then.
 elif [ $ffff == no ]; then 
+# Do the animation instead.
 animation
 # This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
 # This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
+# Says else echo no you fail hard.
 else echo "no not a proper command"
+# Using read to pause for hard fail.
 read gggg
+# And exit command for absolute pwnage fail.
 exit
+# Ends the if statement with fi.
 fi
 # Check for death.
 if [ $BOBS_HEALTH -lt 1 ]; then
