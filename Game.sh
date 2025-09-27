@@ -2576,10 +2576,11 @@ EOF
 # This is the last pause with read before animation begins.
 read aaaaa
 # This creates a variable with a value of 1.
-SHEILD_STRESS=1
+SHEILD_STRESS=1     # For the sheilds actual stress representation.
 # This starts a simple loop.
 while true; do
-
+# Im going to try to explain this loop as best as i can.
+# From within this loop the first thing to happen is this cat command.
 cat << EOF
 ...................................................
      V       v                    V      v
@@ -2595,7 +2596,9 @@ $COIN coins
 $SHEILD_STRESS :sheild stress
 Its Working....
 EOF
+# The next thing to happen is this sleep command to pause for .2 seconds.
 sleep .2
+# It will then cat this frame.
 cat << EOF
 ...................................................
      V       v                    V      v
@@ -2611,7 +2614,9 @@ $COIN coins
 $SHEILD_STRESS :sheild stress
 Its Working....
 EOF
+# For another .2 seconds.
 sleep .2
+# And then cat this frame.
 cat << EOF
 ...................................................
      V       v                    V      v
@@ -2627,7 +2632,9 @@ $COIN coins
 $SHEILD_STRESS :sheild stress
 Its Working....
 EOF
+# For .2 seconds.
 sleep .2
+# And then cat this frame.
 cat << EOF
 ...................................................
      V       v                    V      v
@@ -2643,11 +2650,17 @@ $COIN coins
 $SHEILD_STRESS :sheild stress
 Its Working....
 EOF
+# For .2 seconds.
 sleep .2
+# This will then add 7 sheild stress.
 ((SHEILD_STRESS += 7))
+# This says if sheild stress gets greater than or eqeul to 150 then break free from loop.
 if [[ SHEILD_STRESS -ge 150 ]]; then
-            break
-             fi
+            # This breaks free from loop.
+			break
+             # This ends the if statement.
+			 fi
+# This ends the loop with done.
 done
 }
 cavequake
