@@ -2316,6 +2316,7 @@ Lets Just Hope This Crystal Does Not Go Out ha....
 EOF
 # Using read to pause.
 read uuuu
+# This is the first introduction of the fifth animation for the game.
 batani(){
 cat << EOF
 ...................................................
@@ -2458,12 +2459,14 @@ cat << EOF
 EOF
 sleep .4
 }
+# This calls batani function for bat animation in cave.
 batani
 # This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
 # This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
+# This cats out a bat just flew over my head frame.
 cat << EOF
 ...................................................
      V       v                    V      v
@@ -2472,17 +2475,20 @@ cat << EOF
                        0     
                       -X-A<-Crystal          
 .......................t.............A..............
-$BOBS_HEALTH mana
-$COIN coins
+$BOBS_HEALTH Mana
+$COIN Coins
 A Bat Just Flew Over My Head...
 EOF
+# Using read to pause.
 read vvvv
+# Calls caveani function again.
 caveani
 # This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
 # This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
+# The cat command used again.
 cat << EOF
 ...................................................
      V       v                    V      v
@@ -2491,11 +2497,13 @@ cat << EOF
                        o     
                       -X-A<-Crystal          
 .......................t.............A..............
-$BOBS_HEALTH mana
-$COIN coins
+$BOBS_HEALTH Mana
+$COIN Coins
 Not Going To Lie That Freaked Me Out Ha....
 EOF
+# The read command.
 read wwww
+# The cat command.
 cat << EOF
 ...................................................
      V       v                    V      v
@@ -2504,10 +2512,11 @@ cat << EOF
                        o     
                       -X-A<-Crystal          
 .......................t.............A..............
-$BOBS_HEALTH mana
-$COIN coins
+$BOBS_HEALTH Mana
+$COIN Coins
 What Is That!!!!!?...I Hear A Rumble?
 EOF
+# Using read to pause before yet another new animation,woot.
 read xxxx
 cavequake(){
 cat << EOF
