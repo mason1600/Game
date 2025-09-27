@@ -2518,58 +2518,66 @@ What Is That!!!!!?...I Hear A Rumble?
 EOF
 # Using read to pause before yet another new animation,woot.
 read xxxx
+# This is the first introduction of the sixth animation for the game.
 cavequake(){
+# It starts with the cat command.
 cat << EOF
 ...................................................
      V       v                    V      v
-     V  <-danger                         v
+     V  <-Danger                         v
                                
-     0         shaking commenses              
-    -X-                     <-cracked ground     
+     0         Shaking Commenses              
+    -X-                     <-Cracked Ground     
 .....t.....................|..........A..............
-$BOBS_HEALTH mana
-$COIN coins
+$BOBS_HEALTH Mana
+$COIN Coins
 What Is This!!!!!?...The Ground Is Cracking And Shaking!
 I Better Find A Way To Protect My Self From Falling Stalagtights.
 EOF
+# Using read to pause quick.
 read yyyy
+# Then going into a different animation quick.
 caveani
 # This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
 # This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
+# Then cat this out to show an idea frame.
 cat << EOF
 ...................................................
      V       v                    V      v
      V                            v
-                                     dead warrior
-                       o           -DDDDD-<-sheild
-                      -X-A        x_|_/ <-ded skelton 
+                                     Dead Warrior
+                       o           -DDDDD-<-Sheild
+                      -X-A        x_|_/ <-Ded Skelton 
 .......................t..........x.|.\...............
-$BOBS_HEALTH mana
-$COIN coins
+$BOBS_HEALTH Mana
+$COIN Coins
 I Have An Idea I Can Use This Dead Warriors Sheild..
 EOF
+# Using read to pause quick for them to read.
 read zzzz
+# Then cat this frame out before the animation for quake starts.
 cat << EOF
 ...................................................
      V       v                    V      v
-     V  <-danger                         v
+     V  <-Danger                         v
 
 
-  -DDDDD-<-sheild                          
-     0         shaking commenses              
-    -X-                     <-cracked ground     
+  -DDDDD-<-Sheild                          
+     0         Shaking Commenses              
+    -X-                     <-Cracked Ground     
 .....t.....................|..........A..............
-$BOBS_HEALTH mana
-$COIN coins
+$BOBS_HEALTH Mana
+$COIN Coins
 This Will Protect Me! I Hope...
 EOF
+# This is the last pause with read before animation begins.
 read aaaaa
-
+# This creates a variable with a value of 1.
 SHEILD_STRESS=1
-
+# This starts a simple loop.
 while true; do
 
 cat << EOF
