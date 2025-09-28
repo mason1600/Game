@@ -2584,16 +2584,16 @@ while true; do
 cat << EOF
 ...................................................
      V       v                    V      v
-     V  <-danger                         v
+     V  <-Danger                         v
      
 
-  -DDDDD-<-sheild                          
-     0         shaking commenses              
-    -X-                     <-cracked ground     
+  -DDDDD-<-Sheild                          
+     0         Shaking Commenses              
+    -X-                     <-Cracked Ground     
 .....t.....................|..........A..............
-$BOBS_HEALTH mana
-$COIN coins
-$SHEILD_STRESS :sheild stress
+$BOBS_HEALTH Mana
+$COIN Coins
+$SHEILD_STRESS :Sheild stress
 Its Working....
 EOF
 # The next thing to happen is this sleep command to pause for .2 seconds.
@@ -2602,16 +2602,16 @@ sleep .2
 cat << EOF
 ...................................................
      V       v                    V      v
-        <-danger                         v
+        <-Danger                         v
      V
 
-  -DDDDD-<-sheild                          
-     0         shaking commenses              
-    -X-                     <-cracked ground     
+  -DDDDD-<-Sheild                          
+     0         Shaking Commenses              
+    -X-                     <-Cracked Ground     
 .....t.....................|..........A..............
-$BOBS_HEALTH mana
-$COIN coins
-$SHEILD_STRESS :sheild stress
+$BOBS_HEALTH Mana
+$COIN Coins
+$SHEILD_STRESS :Sheild Stress
 Its Working....
 EOF
 # For another .2 seconds.
@@ -2620,16 +2620,16 @@ sleep .2
 cat << EOF
 ...................................................
      V       v                    V      v
-        <-danger                         v
+        <-Danger                         v
       
      V
-  -DDDDD-<-sheild                          
-     0         shaking commenses              
-    -X-                     <-cracked ground     
+  -DDDDD-<-Sheild                          
+     0         Shaking Commenses              
+    -X-                     <-Cracked Ground     
 .....t.....................|..........A..............
-$BOBS_HEALTH mana
-$COIN coins
-$SHEILD_STRESS :sheild stress
+$BOBS_HEALTH Mana
+$COIN Coins
+$SHEILD_STRESS :Sheild Stress
 Its Working....
 EOF
 # For .2 seconds.
@@ -2638,16 +2638,16 @@ sleep .2
 cat << EOF
 ...................................................
      V       v                    V      v
-        <-danger                         v
+        <-Danger                         v
       
       
-  -DDDDD-<-sheild                          
-     0         shaking commenses              
-    -X-                     <-cracked ground     
+  -DDDDD-<-Sheild                          
+     0         Shaking Commenses              
+    -X-                     <-Cracked Ground     
 .....t.....................|..........A..............
-$BOBS_HEALTH mana
-$COIN coins
-$SHEILD_STRESS :sheild stress
+$BOBS_HEALTH Mana
+$COIN Coins
+$SHEILD_STRESS :Sheild Stress
 Its Working....
 EOF
 # For .2 seconds.
@@ -2670,6 +2670,7 @@ cavequake
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
+# The cat command used again.
 cat << EOF
 ...................................................
      V       v                    V      v
@@ -2678,23 +2679,27 @@ cat << EOF
                        o     
                       -X-A<-Crystal          
 .......................t.............A..............
-$BOBS_HEALTH mana
-$COIN coins
+$BOBS_HEALTH Mana
+$COIN Coins
 I Cant Believe I Did Not Take Any Damage!!!
 EOF
+# Using read to pause.
 read bbbbb
+# Calls caveani function for cave animation.
 caveani
 # This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
 # This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
+# Calls batani function for bat animation.
 batani
 # This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
 # This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
+# The cat command for left or right choice frame.
 cat << EOF
 ..............................|..|...........|..|.....
      V       v               |    |  V   v  |    |
@@ -2703,12 +2708,13 @@ cat << EOF
             o               |      |       |      |
            -X-A<-Crystal     |    |         |    |
 ............t.................|..|.....A.....|..|.....
-$BOBS_HEALTH mana
-$COIN coins
+$BOBS_HEALTH Mana
+$COIN Coins
 It Seems The Cave Splits Here Should I Go left or right?
 EOF
+# Using read to pause before going into a case conditional statement.
 read ccccc
-
+# A case conditional statement.
 case $ccccc in
     right)
         ((BOBS_HEALTH -= 4))
