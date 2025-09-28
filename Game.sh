@@ -2663,6 +2663,7 @@ if [[ SHEILD_STRESS -ge 150 ]]; then
 # This ends the loop with done.
 done
 }
+# This calls the cavequake animation.
 cavequake
 # This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
 # This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
