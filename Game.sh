@@ -2716,9 +2716,12 @@ EOF
 read ccccc
 # A case conditional statement.
 case $ccccc in
-    right)
-        ((BOBS_HEALTH -= 4))
-        cat << EOF
+    # This is choice right.
+	right)
+        # This will minus 4 health from bob.
+		((BOBS_HEALTH -= 4))
+        # The cat command used again.
+		cat << EOF
 ..............................|..|..........|..|.....
      V       v               |    |  V   v |    |
      V                      |      | v    |      |
@@ -2726,15 +2729,20 @@ case $ccccc in
                             |      |      |  o   |
                              |   |         |-X-A|
 .............................|..|....A.....|.t.|.....
-$BOBS_HEALTH mana
-$COIN coins
+$BOBS_HEALTH Mana
+$COIN Coins
 I Could Not Get Far It Caved In Took Moderate Damage.
 EOF
+# Using read to pause.
 read ddddd
+# Do not forget double semis between choices.
 ;;
-    left)
-        ((BOBS_HEALTH -= 2))
-        cat << EOF
+    # This is choice left.
+	left)
+        # This will minus 2 health from bob.
+		((BOBS_HEALTH -= 2))
+        # The cat command used again.
+		cat << EOF
 ..............................|..|...........|..|.....
      V       v               |    |  V   v  |    |
      V                      |      | v     |      |
@@ -2742,17 +2750,25 @@ read ddddd
                             |  o   |       |      |
                              |-X-A|         |   |
 .............................|.t.|....A.....|..|.....
-$BOBS_HEALTH mana
-$COIN coins
+$BOBS_HEALTH Mana
+$COIN Coins
 I Could Not Get Far It Flooded Took Minor Damage.
 EOF
+# Using read to pause.
 read eeeee
+# Double semis.
 ;;
-    *)
-    echo 'not a valid response'
-    read fffff
-    exit
+    # This handles all other choices other than what i want user to choose.
+	*)
+    # Simple echo command.
+	echo 'Not a valid response.'
+    # Using read to pause.
+	read fffff
+    # Using exit for hard failz.
+	exit
+# Double semis.
 ;;
+# Ends the case statement.
 esac
 # Check for death.
 if [ $BOBS_HEALTH -lt 1 ]; then
