@@ -2778,12 +2778,14 @@ exit
 # Move on if still alive.
 else echo "still alive woot"
 fi
+# Calls caveani function for cave animation.
 caveani
 # This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
 # This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
+# The cat command.
 cat << EOF
 ...................................................
      V       v                    V      v
@@ -2792,24 +2794,28 @@ cat << EOF
                        o     
                       -X-A<-Crystal          
 .......................t.............A..............
-$BOBS_HEALTH mana
-$COIN coins
+$BOBS_HEALTH Mana
+$COIN Coins
 At Least I Have Not Run In-To Anything To Spooky Yet.
 Just Some Casual Spelunking.
 EOF
+# Using read to pause.
 read fffff
+# Calls caveani function.
 caveani
 # This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
 # This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
+# Calls batani function for bat animation.
 batani
 # This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
 # This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
+# The read command used again.
 cat << EOF
 ...................................................
      V       v                    V      v
@@ -2818,11 +2824,13 @@ cat << EOF
                        o     
                       -X-A<-Crystal          
 .......................t.............A..............
-$BOBS_HEALTH mana
-$COIN coins
+$BOBS_HEALTH Mana
+$COIN Coins
 There sure is alot of bats flying around down here!
 EOF
+# Using read to pause.
 read ggggg
+# Calls caveani function.
 caveani
 # This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
 # This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
