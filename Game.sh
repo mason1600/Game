@@ -3020,6 +3020,61 @@ The Cave Seems To Go On Forever From What I Know At The Moment!
 EOF
 # The read command used to pause.
 read qqqqq
+# Calls cave animation function.
+caveani
+# This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
+# This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
+cat << EOF
+...................................................
+     V       v                    V      v
+     V                            v
+                              s-s
+                       o      | |<-Scroll
+                      -X-A    s-s      
+.......................t.......|.....A..............
+$BOBS_HEALTH Mana
+$COIN Coins
+Whats this! A scroll hmm let me read it...Uh-Oh.
+EOF
+# The read command used to pause.
+read rrrrr
+echo "The Scroll Says Specifically That.."
+echo "Whoever Reads This Return Scroll.."
+echo "Shall Return To Where-Ever Hence Forth Thee Came.."
+read sssss
+# The cat command for inside cabin frame.
+cat << EOF        
+          Bird      --.----------.--                      
+         -vv-         .          .    t   t         
+              Inside  .   o      .    t  t       
+                 Cabn>.  -X-     .     Tree <-         
+..........................t|  |..........t.......
+                           |  |
+                           |  |
+$BOBS_HEALTH Mana
+$COIN Coins
+Ya, so, that happend. lol, it was a return scroll.
+EOF
+# Using read to pause.
+read ttttt
+# The cat command for inside cabin frame.
+cat << EOF        
+          Bird      --.----------.--                      
+         -vv-         .          .    t   t         
+              Inside  .   o      .    t  t       
+                 Cabn>.  -X-     .     Tree <-         
+..........................t|  |..........t.......
+                           |  |
+                           |  |
+$BOBS_HEALTH Mana
+$COIN Coins
+Well im not going back down in there if thats what your thinking lol.
+EOF
+# Using read to pause.
+read uuuuu
 }
 # This calls level8 function.
 level8
