@@ -2837,6 +2837,7 @@ caveani
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
+# The cat command.
 cat << EOF
 ..............................|..|...........|..|.....
      V       v               |    |  V   v  |    |
@@ -2845,12 +2846,13 @@ cat << EOF
             o               |      |       |      |
            -X-A<-Crystal     |    |         |    |
 ............t.................|..|.....A.....|..|.....
-$BOBS_HEALTH mana
-$COIN coins
+$BOBS_HEALTH Mana
+$COIN Coins
 It Seems The Cave Splits Here Should I Go left or right?
 EOF
+# Using read to pause before case conditional statement.
 read hhhhh
-
+# Beginning of case conditional statement.
 case $hhhhh in
     right)
         ((BOBS_HEALTH -= 5))
@@ -2862,8 +2864,8 @@ case $hhhhh in
                             |      |      |  o   |
                              |   |         |-X-A|
 .............................|..|....A.....|.t.|.....
-$BOBS_HEALTH mana
-$COIN coins
+$BOBS_HEALTH Mana
+$COIN Coins
 I Could Not Get Far Had A Bear In It Took Moderate Damage.
 EOF
 read iiiii
@@ -2878,8 +2880,8 @@ read iiiii
                             |  o   |       |      |
                              |-X-A|         |   |
 .............................|.t.|....A.....|..|.....
-$BOBS_HEALTH mana
-$COIN coins
+$BOBS_HEALTH Mana
+$COIN Coins
 I Could Not Get Far It Smells Of Gas Took Minor Damage.
 EOF
 read jjjjj
@@ -2889,21 +2891,24 @@ read jjjjj
     read kkkkk
     exit
 ;;
+# End of case conditional statement.
 esac
 # Check for death.
 if [ $BOBS_HEALTH -lt 1 ]; then
-echo "this is the end you have died"
+echo "This is the end you have died."
 read dededededededed
 exit
 # Move on if still alive.
 else echo "still alive woot"
 fi
+# This calls caveani function for cave animation.
 caveani
 # This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
 # This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
+# The cat command used again.
 cat << EOF
 ...................................................
      V       v                    V      v
@@ -2912,11 +2917,13 @@ cat << EOF
                        o     
                       -X-A<-Crystal          
 .......................t.............A..............
-$BOBS_HEALTH mana
-$COIN coins
+$BOBS_HEALTH Mana
+$COIN Coins
 The Cave Seems Stable At The Moment Hopefully No More Quakes.
 EOF
+# Using read command here for pause again.
 read lllll
+# Creates new function called cavedweller for angry dwell.
 cavedweller(){
 cat << EOF
 ...................................................
@@ -2926,8 +2933,8 @@ cat << EOF
                        o      
                       -X-A     -0-<-Angry Dweller     
 .......................t........j.....A..............
-$BOBS_HEALTH mana
-$COIN coins
+$BOBS_HEALTH Mana
+$COIN Coins
 An angry dweller appears!
 EOF
 read mmmmm
@@ -2942,8 +2949,8 @@ cat << EOF
                        o        $angryshealth DwellHealth
                       -X-A     -0-<-Angry Dweller     
 .......................t........j.....A..............
-$BOBS_HEALTH mana
-$COIN coins
+$BOBS_HEALTH Mana
+$COIN Coins
 He Attacks!
 EOF
 read nnnnn
@@ -2964,8 +2971,8 @@ cat << EOF
                        o        $angryshealth DwellHealth
                       -X-A     -0-<-Angry Dweller     
 .......................t........j.....A..............
-$BOBS_HEALTH mana
-$COIN coins
+$BOBS_HEALTH Mana
+$COIN Coins
 You Attack!
 EOF
 read ooooo
@@ -2974,7 +2981,9 @@ if [[ $angryshealth -le 0 ]]; then
              fi
 done
 }
+# This calls that new function created called cavedweller.
 cavedweller
+# The cat command used again.
 cat << EOF
 ...................................................
      V       v                    V      v
@@ -2983,17 +2992,20 @@ cat << EOF
                        0     
                       -X-A<-Crystal          
 .......................t.............A..............
-$BOBS_HEALTH mana
-$COIN coins
+$BOBS_HEALTH Mana
+$COIN Coins
 The Cave Seems Calm At The Moment Hopefully No More Angry Dwellers!
 EOF
+# The read command used again.
 read ppppp
+# Calls cave animation function.
 caveani
 # This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
 # This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
+# The cat command used again for forever frame.
 cat << EOF
 ...................................................
      V       v                    V      v
@@ -3002,15 +3014,18 @@ cat << EOF
                        0     
                       -X-A          
 .......................t.............A..............
-$BOBS_HEALTH mana
-$COIN coins
+$BOBS_HEALTH Mana
+$COIN Coins
 The Cave Seems To Go On Forever From What I Know At The Moment!
 EOF
+# The read command used to pause.
 read qqqqq
 }
+# This calls level8 function.
 level8
-
+# This tells user that this is as far as the game has been created so far.
 echo "End Of Game So Far Enter Will Close."
+# This read command will hold user here till enter and then exit.
 read eightteenth
-
+# This will exit the game using exit command.
 exit
