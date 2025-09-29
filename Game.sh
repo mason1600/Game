@@ -3075,9 +3075,35 @@ Well im not going back down in there if thats what your thinking lol.
 EOF
 # Using read to pause.
 read uuuuu
+echo "This Ends Level 8!"
+read vvvvv
 }
 # This calls level8 function.
 level8
+echo "Begin LeveL NiNe!"
+read wwwww
+level9(){
+animation2
+# This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
+# This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
+# The cat command.
+cat << EOF
+              @
+             @@@
+     0        q    -v-Bird
+    -X-       q
+.....t........q.............
+$BOBS_HEALTH Mana
+$COIN Coins
+Its this freaking tree again!
+EOF
+# Using read to pause.
+read xxxxx
+}
+level9
 # This tells user that this is as far as the game has been created so far.
 echo "End Of Game So Far Enter Will Close."
 # This read command will hold user here till enter and then exit.
