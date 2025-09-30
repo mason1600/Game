@@ -3042,9 +3042,11 @@ Whats this! A scroll hmm let me read it...Uh-Oh.
 EOF
 # The read command used to pause.
 read rrrrr
+# Three echo commands used for scroll text.
 echo "The Scroll Says Specifically That.."
 echo "Whoever Reads This Return Scroll.."
 echo "Shall Return To Where-Ever Hence Forth Thee Came.."
+# Using read to pause to read text.
 read sssss
 # The cat command for inside cabin frame.
 cat << EOF        
@@ -3076,14 +3078,20 @@ Well im not going back down in there if thats what your thinking lol.
 EOF
 # Using read to pause.
 read uuuuu
+# This echos end of level 8.
 echo "This Ends Level 8!"
+# Using read to pause.
 read vvvvv
 }
 # This calls level8 function.
 level8
+# This echos begin level nine.
 echo "Begin LeveL NiNe!"
+# This pauses till enter press to begin level 9.
 read wwwww
+# This creates level9 function for level nine.
 level9(){
+# Calls second animation.
 animation2
 # This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
 # This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
@@ -3104,6 +3112,7 @@ EOF
 # Using read to pause.
 read xxxxx
 }
+# This calls level9 function containing all of level nine.
 level9
 # This tells user that this is as far as the game has been created so far.
 echo "End Of Game So Far Enter Will Close."
