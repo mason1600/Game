@@ -3027,6 +3027,7 @@ caveani
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
+# The cat command used for scroll frame.
 cat << EOF
 ...................................................
      V       v                    V      v
