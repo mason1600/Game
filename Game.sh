@@ -1756,7 +1756,7 @@ read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
 # Says else echo no not proper.
-else echo "no not a proper command"
+else echo "No, not a proper command."
 # Using read to pause.
 read cccc
 # Using exit command to close due to improper command usage.
