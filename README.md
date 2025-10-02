@@ -10,3 +10,5 @@ This Is Coded To Be On Purpose....Focus OR DIE!!!..hehe.Enjoy!
 <img width="1920" height="1080" alt="Screenshot from 2025-10-02 18-25-49" src="https://github.com/user-attachments/assets/25fd5c4b-82b3-491a-8767-4871675d97d2" />
 
 ![Screenshot_20251002_183504_Termux](https://github.com/user-attachments/assets/7f31669e-bebd-40f7-bd87-7cabc8a1b61f)
+
+![Uploading Screenshot from 2025-10-02 18-49-03.png…]()
