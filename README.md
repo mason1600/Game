@@ -10,5 +10,8 @@ This Is Coded To Be On Purpose....Focus OR DIE!!!..hehe.Enjoy!
 <img width="1920" height="1080" alt="Screenshot from 2025-10-02 18-25-49" src="https://github.com/user-attachments/assets/25fd5c4b-82b3-491a-8767-4871675d97d2" />
 above is Game running in linux mint.debian derivitive
 
+![Screenshot_20251002_183504_Termux](https://github.com/user-attachments/assets/190fbed9-603e-4951-bb08-c31e51a64b79)
+above is Game running in termux. mobile phone
+
 <img width="1920" height="1080" alt="Screenshot from 2025-10-02 18-49-03" src="https://github.com/user-attachments/assets/0c92535b-3199-4cd8-b3fd-0bd3eecb4bbb" />
 above is Game running in EOS.arch derivitive
