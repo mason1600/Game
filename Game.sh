@@ -3247,7 +3247,7 @@ I really wanna go to the beach.
 Gotta find a large body of water.
 EOF
 # Using read to pause.
-read ff
+read gg
 }
 # This calls level9 function containing all of level nine.
 level9
