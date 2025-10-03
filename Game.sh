@@ -3111,6 +3111,143 @@ Its this freaking tree again!
 EOF
 # Using read to pause.
 read xxxxx
+# The cat command.
+cat << EOF
+              @
+       ----- @@@
+       - o    q    -v-Bird
+       --X--- q
+.........t....q.............
+$BOBS_HEALTH Mana
+$COIN Coins
+I am going to give it a poke.
+EOF
+# Using read to pause.
+read yyyyy
+# The cat command.
+cat << EOF
+              
+              
+         0    q    -v-Bird
+        -X-   q
+.........t...@q..@.@@.......
+$BOBS_HEALTH Mana
+$COIN Coins
+Hmmm it seems it dropped its fruit!
+EOF
+# Using read to pause.
+read zzzzz
+# The cat command.
+cat << EOF
+              
+              
+         0    q    -v-Bird
+        -X-  1q  2 34
+.........t...@q..@.@@.......
+$BOBS_HEALTH Mana
+$COIN Coins
+What fruit should i try? 1, 2, 3, or 4?
+EOF
+# Using read to pause and ask.
+read aa
+case $aa in
+    1)
+        ((BOBS_HEALTH += 2))
+        # The cat command.
+        cat << EOF
+              
+              
+         o    q    -v-Bird
+        -X-   q  2 34
+.........t....q..@.@@.......
+$BOBS_HEALTH Mana
+$COIN Coins
+It seems that one was a good fruit.
+EOF
+# Using read to pause.
+read bb
+;;
+    2)
+        ((BOBS_HEALTH -= 2))
+        # The cat command.
+        cat << EOF
+              
+              
+         o    q    -v-Bird
+        -X-  1q    34
+.........t...@q....@@.......
+$BOBS_HEALTH Mana
+$COIN Coins
+It seems that one was a bad fruit.
+EOF
+# Using read to pause.
+read cc
+;;
+    3)
+        ((BOBS_HEALTH += 3))
+        # The cat command.
+        cat << EOF
+              
+              
+         o    q    -v-Bird
+        -X-  1q  2  4
+.........t...@q..@..@.......
+$BOBS_HEALTH Mana
+$COIN Coins
+It seems that one was a good fruit.
+EOF
+# Using read to pause.
+read dd
+;;
+    4)
+        ((BOBS_HEALTH -= 3))
+        # The cat command.
+        cat << EOF
+              
+              
+         o    q    -v-Bird
+        -X-  1q  2  3
+.........t...@q..@..@.......
+$BOBS_HEALTH Mana
+$COIN Coins
+It seems that one was a bad fruit.
+EOF
+# Using read to pause.
+read ee
+;;
+    *)
+    echo "No not a command."
+    read ff
+    exit
+;;
+esac
+# Check for death.
+if [ $BOBS_HEALTH -lt 1 ]; then
+echo "This is the end you have died."
+read dededededededed
+exit
+# Move on if still alive.
+else echo "still alive woot"
+fi
+animation2
+# This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
+# This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
+cat << EOF
+              
+              
+         o        -v-Bird
+        -X-       
+.........t..................
+$BOBS_HEALTH Mana
+$COIN Coins
+I really wanna go to the beach.
+Gotta find a large body of water.
+EOF
+# Using read to pause.
+read ff
 }
 # This calls level9 function containing all of level nine.
 level9
