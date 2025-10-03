@@ -15,3 +15,6 @@ above is Game running in termux. mobile phone
 
 <img width="1920" height="1080" alt="Screenshot from 2025-10-02 18-49-03" src="https://github.com/user-attachments/assets/0c92535b-3199-4cd8-b3fd-0bd3eecb4bbb" />
 above is Game running in EOS.arch derivitive
+
+<img width="1920" height="1080" alt="Screenshot" src="https://github.com/user-attachments/assets/7b109edb-3a7f-4b7d-befb-e63d833b1629" />
+above is Game running in Puppy Linux. portable distro
