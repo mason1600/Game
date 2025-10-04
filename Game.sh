@@ -313,7 +313,7 @@ elif [[ $NINTH == no ]]; then
 else
     # Answer does not exist, handle the situation (e.g., print an error).
     echo "Error: $NINTH does not exist." "Do to USER Error the app will close with press of Enter."
-    # Prints and error and holds user for them to read then closes with press of enter.
+    # Prints an error and holds user for them to read then closes with press of enter.
     read error
 # Another exit code.
     exit
@@ -352,7 +352,7 @@ sleep 1
 else
     # Answer does not exist, handle the situation (e.g., print an error).
     echo "Error: $TENTH does not exist." "do to user error the app will close with press of enter"
-    # Prints and error and holds user for them to read then closes with press of enter.
+    # Prints an error and holds user for them to read then closes with press of enter.
     read error2
 # Another exit code.
     exit
@@ -418,7 +418,7 @@ elif [[ $FOURTEENTH == no ]]; then
 else
     # Function does not exist, handle the situation (e.g., print an error).
     echo "Error: $FOURTEENTH does not exist." "do to user error the app will close with press of enter"
-    # Prints and error and holds user for them to read then closes with press of enter.
+    # Prints an error and holds user for them to read then closes with press of enter.
     read error
 # Another exit code.
     exit
@@ -880,7 +880,7 @@ elif [[ $FOURTEENTH == no ]]; then
 else
     # Function does not exist, handle the situation (e.g., print an error).
     echo "Error: $FOURTEENTH does not exist." "do to user error the app will close with press of enter"
-    # Prints and error and holds user for them to read then closes with press of enter.
+    # Prints an error and holds user for them to read then closes with press of enter.
     read error
 # Another exit code.
     exit
@@ -1176,7 +1176,7 @@ elif [[ $ccc == no ]]; then
 else
     # Answer does not exist, handle the situation (e.g., print an error).
     echo "Error: $ccc does not exist." "Do to user error the app will close with press of enter."
-    # Prints and error and holds user for them to read then closes with press of enter.
+    # Prints an error and holds user for them to read then closes with press of enter.
     read error3
 # Another exit code.
     exit
@@ -1215,7 +1215,7 @@ sleep 1
 else
     # Answer does not exist, handle the situation (e.g., print an error).
     echo "Error: $ddd does not exist." "Do to USER Error the app will close with press of enter."
-    # Prints and error and holds user for them to read then closes with press of enter.
+    # Prints an error and holds user for them to read then closes with press of enter.
     read error4
 # Another exit code.
     exit
@@ -1285,7 +1285,7 @@ elif [[ $ggg == no ]]; then
 else
     # Function does not exist, handle the situation (e.g., print an error).
     echo "Error: $ggg does not exist." "Do to USER Error the app will close with press of enter."
-    # Prints and error and holds user for them to read then closes with press of enter.
+    # Prints an error and holds user for them to read then closes with press of enter.
     read error5
 # Another exit code.
     exit
