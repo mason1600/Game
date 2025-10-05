@@ -3150,6 +3150,7 @@ What fruit should i try? 1, 2, 3, or 4?
 EOF
 # Using read to pause and ask.
 read aa
+# The start of a case conditional statement.
 case $aa in
     1)
         ((BOBS_HEALTH += 2))
