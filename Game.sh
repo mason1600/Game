@@ -3220,7 +3220,8 @@ EOF
 # Using read to pause.
 read ee
 ;;
-    *)
+    # This handles all other choices or non choices.
+	*)
     echo "No not a command."
     read ff
     exit
