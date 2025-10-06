@@ -2976,6 +2976,7 @@ $COIN Coins
 You Attack!
 EOF
 read ooooo
+# This checks to see if angrys health is less than or equal to zer0.
 if [[ $angryshealth -le 0 ]]; then
             break
              fi
