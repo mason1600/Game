@@ -3152,7 +3152,8 @@ EOF
 read aa
 # The start of a case conditional statement.
 case $aa in
-    1)
+   # This is first fruit choice.
+	1)
         ((BOBS_HEALTH += 2))
         # The cat command.
         cat << EOF
@@ -3168,7 +3169,8 @@ EOF
 # Using read to pause.
 read bb
 ;;
-    2)
+    # This is second fruit choice.
+	2)
         ((BOBS_HEALTH -= 2))
         # The cat command.
         cat << EOF
@@ -3184,7 +3186,8 @@ EOF
 # Using read to pause.
 read cc
 ;;
-    3)
+    # This is third fruit choice.
+	3)
         ((BOBS_HEALTH += 3))
         # The cat command.
         cat << EOF
@@ -3200,7 +3203,8 @@ EOF
 # Using read to pause.
 read dd
 ;;
-    4)
+    # This is fourth fruit choice.
+	4)
         ((BOBS_HEALTH -= 3))
         # The cat command.
         cat << EOF
@@ -3221,6 +3225,7 @@ read ee
     read ff
     exit
 ;;
+# This ends the case statement.
 esac
 # Check for death.
 if [ $BOBS_HEALTH -lt 1 ]; then
