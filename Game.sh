@@ -3256,6 +3256,199 @@ Gotta find a large body of water.
 EOF
 # Using read to pause.
 read gg
+cat << EOF
+              
+              
+         o        woot
+        -X-       
+.........t..................
+$BOBS_HEALTH Mana
+$COIN Coins
+Whats this up ahead i think i see a field of chests!
+I remember some of them not being so nice though..
+EOF
+# Using read to pause.
+read hh
+chest1(){
+# The cat command used again.
+cat << EOF
+
+$BOBS_HEALTH Mana
+$COIN Coins                -X- Sun                     
+                                      
+    o                   c   Chest            
+   -X-                j---j                   
+....t..................---.................
+Whats this ? Oh a treasure chest i think?
+Should i open it?yes or no?
+EOF
+# Using read to pause and ask.
+read ee
+# A if conditional statement.
+if [ $ee == yes ]; then
+# This adds a coin.
+((COIN += 1))
+# This adds to bobs health.
+((BOBS_HEALTH += 1))
+# The cat command used again.
+cat << EOF
+
+$BOBS_HEALTH Mana
+$COIN Coins                -X- Sun                     
+                                      
+                      o   - Chest Open            
+                     -X- i@ -j                   
+.............. .......t.---.................
+Its seems there is a coin and a crunchy pickle inside.
+I will take the coin and crunch the pickle.
+EOF
+# The read command to pause.
+read ff
+# Then else if no then animation.
+elif [ $ee == no ]; then 
+# The animation again.
+animation
+# This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
+# This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
+# This will use the echo command to inform user.
+else echo "No not a proper command."
+# This will pause using read.
+read ff
+# This will exit do to lack of focus.
+exit
+# This ends the if statement.
+fi
+}
+chest2(){
+# The cat command for chest frame.
+cat << EOF
+$BOBS_HEALTH Mana
+$COIN Coins                -X- Sun                     
+                                      
+    o                   c   Chest            
+   -X-                j---j                   
+....t..................---.................
+Whats this ? Oh a treasure chest i think?
+Should i open it?yes or no?
+EOF
+# Using read to pause for if statement.
+read bbbb
+# Start of if statement.
+if [ $bbbb == yes ]; then
+# Adds one coin.
+((COIN += 1))
+# Adds two health to bob.
+((BOBS_HEALTH += 2))
+# The cat command for chest open.
+cat << EOF
+$BOBS_HEALTH Mana
+$COIN Coins                -X- Sun                     
+                                      
+  Sic its a burger    o   - Chest Open            
+                     -X- @@ -j                   
+.............. .......t.---.................
+Its seems there is a coin and a juicy Burger!
+I will take the coin and demolish this burg!
+EOF
+# The read command to pause again.
+read pausaginn
+# Says else if no then.
+elif [ $bbbb == no ]; then 
+# Do the animation instead.
+animation
+# This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
+# This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
+# Says else echo no not proper.
+else echo "No, not a proper command."
+# Using read to pause.
+read cccc
+# Using exit command to close due to improper command usage.
+exit
+# Ends the if statement.
+fi
+}
+chest3(){
+# The cat command for chest.
+cat << EOF
+$BOBS_HEALTH Mana
+$COIN Coins                -X- Sun                     
+                                      
+    o                   c   Chest            
+   -X-                j---j                   
+....t..................---.................
+Whats this? Oh a treasure chest i think?
+Should i open it? yes or no?
+EOF
+# Using read to pause and ask for if statement.
+read ffff
+# Beginning of if statement says if yes then.
+if [ $ffff == yes ]; then
+# Minus 2 health from bob.
+((BOBS_HEALTH -= 2))
+# And cat this frame boom bomb.
+cat << EOF
+$BOBS_HEALTH Mana
+$COIN Coins                -X- Sun                     
+                                      
+  Ouch it was a bomb  o   - Chest Open            
+                     -X- -@ -j                   
+.............. .......t.---.................
+It was a small bomb only did 2 damage!
+EOF
+# Using read to pausaaginnn.
+read pausaginnn
+# Says else if no then.
+elif [ $ffff == no ]; then 
+# Do the animation instead.
+animation
+# This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
+# This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
+# Says else echo no you fail hard.
+else echo "no not a proper command"
+# Using read to pause for hard fail.
+read gggg
+# And exit command for absolute pwnage fail.
+exit
+# Ends the if statement with fi.
+fi
+# Check for death.
+if [ $BOBS_HEALTH -lt 1 ]; then
+echo "this is the end you have died"
+read dededededededed
+exit
+# Move on if still alive.
+else echo "still alive woot"
+fi
+}
+chest$(( RANDOM % 3 + 1 ))
+chest$(( RANDOM % 3 + 1 ))
+chest$(( RANDOM % 3 + 1 ))
+chest$(( RANDOM % 3 + 1 ))
+chest$(( RANDOM % 3 + 1 ))
+chest$(( RANDOM % 3 + 1 ))
+chest$(( RANDOM % 3 + 1 ))
+cat << EOF
+              
+              
+         o        awsome
+        -X-       
+.........t..................
+$BOBS_HEALTH Mana
+$COIN Coins
+Well I am either alive or dead at this point lol.
+Still gotta find a large body of water...
+EOF
+# Using read to pause.
+read ii
 }
 # This calls level9 function containing all of level nine.
 level9
