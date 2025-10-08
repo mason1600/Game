@@ -3258,6 +3258,7 @@ Gotta find a large body of water.
 EOF
 # Using read to pause.
 read gg
+# The cat command used for field of chests frame.
 cat << EOF
               
               
