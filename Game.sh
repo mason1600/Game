@@ -3452,6 +3452,43 @@ Still gotta find a large body of water...
 EOF
 # Using read to pause.
 read ii
+animation
+# This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
+# This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
+cat << EOF
+              
+                   wheres the beach...
+                           o
+                          -X-
+...........................t
+$BOBS_HEALTH Mana
+$COIN Coins
+You can smell the moisture in the air.
+Must be a large body of water nearby.
+EOF
+# Using read to pause.
+read jj
+animation2
+# This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
+# This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
+cat << EOF
+              
+                   
+                           o
+                          -X-   water--v
+...........................t,,,,,,,,,,,,,,
+$BOBS_HEALTH Mana
+$COIN Coins
+Here! I found some water, but hmmm can i swim?
+EOF
+# Using read to pause.
+read kk
 }
 # This calls level9 function containing all of level nine.
 level9
