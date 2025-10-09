@@ -351,7 +351,7 @@ elif [[ $TENTH == bad ]]; then
 sleep 1
 else
     # Answer does not exist, handle the situation (e.g., print an error).
-    echo "Error: $TENTH does not exist." "do to user error the app will close with press of enter"
+    echo "Error: $TENTH does not exist." "Do to user error the app will close with press of enter."
     # Prints an error and holds user for them to read then closes with press of enter.
     read error2
 # Another exit code.
