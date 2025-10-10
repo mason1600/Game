@@ -3432,6 +3432,7 @@ exit
 else echo "still alive woot"
 fi
 }
+# This will call 7 random chests.
 chest$(( RANDOM % 3 + 1 ))
 chest$(( RANDOM % 3 + 1 ))
 chest$(( RANDOM % 3 + 1 ))
@@ -3439,6 +3440,7 @@ chest$(( RANDOM % 3 + 1 ))
 chest$(( RANDOM % 3 + 1 ))
 chest$(( RANDOM % 3 + 1 ))
 chest$(( RANDOM % 3 + 1 ))
+# The cat command used for awsome frame.
 cat << EOF
               
               
