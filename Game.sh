@@ -3272,6 +3272,7 @@ I remember some of them not being so nice though..
 EOF
 # Using read to pause.
 read hh
+# This is chest one1 as a function.
 chest1(){
 # The cat command used again.
 cat << EOF
@@ -3325,6 +3326,7 @@ exit
 # This ends the if statement.
 fi
 }
+# This is chest two2 as a function.
 chest2(){
 # The cat command for chest frame.
 cat << EOF
@@ -3376,6 +3378,7 @@ exit
 # Ends the if statement.
 fi
 }
+# This is chest three3 as a function.
 chest3(){
 # The cat command for chest.
 cat << EOF
@@ -3454,12 +3457,14 @@ Still gotta find a large body of water...
 EOF
 # Using read to pause.
 read ii
+# This calls animation function.
 animation
 # This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
 # This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
+# The cat command used again.
 cat << EOF
               
                    wheres the beach...
@@ -3473,12 +3478,14 @@ Must be a large body of water nearby.
 EOF
 # Using read to pause.
 read jj
+# This calls animation2 function.
 animation2
 # This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
 # This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
+# The cat command used again.
 cat << EOF
               
                    
