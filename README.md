@@ -20,4 +20,4 @@ above is Game running in EOS.arch derivitive
 above is Game running in Puppy Linux. portable distro
 
 https://github.com/user-attachments/assets/0df2bdce-0d8f-444d-9736-8c727d86a19d
-above is time lapse of some of the code for funz
+
