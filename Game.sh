@@ -3447,7 +3447,7 @@ chest$(( RANDOM % 3 + 1 ))
 cat << EOF
               
               
-         o        awsome
+         o        Awsome
         -X-       
 .........t..................
 $BOBS_HEALTH Mana
@@ -3467,7 +3467,7 @@ read -t .1 -n 1 dummytrap
 # The cat command used again.
 cat << EOF
               
-                   wheres the beach...
+                   Wheres The Beach...
                            o
                           -X-
 ...........................t
@@ -3490,7 +3490,7 @@ cat << EOF
               
                    
                            o
-                          -X-   water--v
+                          -X-   Water--v
 ...........................t,,,,,,,,,,,,,,
 $BOBS_HEALTH Mana
 $COIN Coins
