@@ -19,7 +19,5 @@ above is Game running in EOS.arch derivitive
 <img width="1920" height="1080" alt="Screenshot" src="https://github.com/user-attachments/assets/7b109edb-3a7f-4b7d-befb-e63d833b1629" />
 above is Game running in Puppy Linux. portable distro
 
-
-
-https://github.com/user-attachments/assets/4aa91dd5-d297-4c44-8645-ff030223b84c
+https://github.com/user-attachments/assets/0df2bdce-0d8f-444d-9736-8c727d86a19d
 above is time lapse of some of the code for funz
