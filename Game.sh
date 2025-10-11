@@ -3237,7 +3237,7 @@ exit
 # Move on if still alive.
 else echo "still alive woot"
 fi
-# This calls the function animation2
+# This calls the function animation2.
 animation2
 # This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
 # This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
