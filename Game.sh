@@ -3419,7 +3419,7 @@ read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
 # Says else echo no you fail hard.
-else echo "no not a proper command"
+else echo "No not a proper command."
 # Using read to pause for hard fail.
 read gggg
 # And exit command for absolute pwnage fail.
