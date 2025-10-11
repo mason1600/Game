@@ -1252,7 +1252,7 @@ cat << EOF
 .............................v....
 $BOBS_HEALTH Mana
 $COIN Coins
-Hey you found another coin awsome!
+Hey you found another coin awesome!
 EOF
 # Using read to pause.
 read fff
@@ -3443,11 +3443,11 @@ chest$(( RANDOM % 3 + 1 ))
 chest$(( RANDOM % 3 + 1 ))
 chest$(( RANDOM % 3 + 1 ))
 chest$(( RANDOM % 3 + 1 ))
-# The cat command used for awsome frame.
+# The cat command used for awesome frame.
 cat << EOF
               
               
-         o        Awsome
+         o        Awesome
         -X-       
 .........t..................
 $BOBS_HEALTH Mana
