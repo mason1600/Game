@@ -3262,7 +3262,7 @@ read gg
 cat << EOF
               
               
-         o        woot
+         o        Woot
         -X-       
 .........t..................
 $BOBS_HEALTH Mana
