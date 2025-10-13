@@ -3498,6 +3498,32 @@ Here! I found some water, but hmmm can i swim?
 EOF
 # Using read to pause.
 read kk
+# The cat command used again.
+cat << EOF
+              
+                   
+            scuba helm-->  O
+                          -X-   Water--v
+...........................t,,,,,,,,,,,,,,
+$BOBS_HEALTH Mana
+$COIN Coins
+Of course i can, i brought my scuba helmet.
+EOF
+# Using read to pause.
+read ll
+# The cat command used again.
+cat << EOF
+              
+                   
+            scuba helm-->  O
+                          -X-   Water--v
+...........................t,,,,,,,,,,,,,,
+$BOBS_HEALTH Mana
+$COIN Coins
+I am Diving In to see what i can find!
+EOF
+# Using read to pause.
+read mm
 }
 # This calls level9 function containing all of level nine.
 level9
