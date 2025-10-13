@@ -3502,12 +3502,12 @@ read kk
 cat << EOF
               
                    
-            scuba helm-->  O
+            Scuba Helm-->  O
                           -X-   Water--v
 ...........................t,,,,,,,,,,,,,,
 $BOBS_HEALTH Mana
 $COIN Coins
-Of course i can, i brought my scuba helmet.
+Of Course I Can, I Brought My Scuba Helmet.
 EOF
 # Using read to pause.
 read ll
@@ -3515,12 +3515,12 @@ read ll
 cat << EOF
               
                    
-            scuba helm-->  O
+            Scuba Helm-->  O
                           -X-   Water--v
 ...........................t,,,,,,,,,,,,,,
 $BOBS_HEALTH Mana
 $COIN Coins
-I am Diving In to see what i can find!
+I am Diving In to see what I can find!
 EOF
 # Using read to pause.
 read mm
