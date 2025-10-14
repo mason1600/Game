@@ -3524,6 +3524,34 @@ I am Diving In to see what I can find!
 EOF
 # Using read to pause.
 read mm
+# The cat command used again.
+cat << EOF
+              
+                   
+        Scuba Helm off-->  o
+                          -X-Cold brr--v
+...........................t,,,,,,,,,,,,,,
+$BOBS_HEALTH Mana
+$COIN Coins
+Actually the water just touched my toe and its very cold!
+I dont feel like taking a dip into that today!
+EOF
+# Using read to pause.
+read nn
+# The cat command used again.
+cat << EOF
+              
+                   
+                           o
+                          -X-Cold brr--v
+...........................t,,,,,,,,,,,,,,
+$BOBS_HEALTH Mana
+$COIN Coins
+Maybe the ferry man will take me across?
+ohhhhhhh ferrry mannn...
+EOF
+# Using read to pause.
+read oo
 }
 # This calls level9 function containing all of level nine.
 level9
