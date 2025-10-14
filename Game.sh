@@ -3494,7 +3494,7 @@ cat << EOF
 ...........................t,,,,,,,,,,,,,,
 $BOBS_HEALTH Mana
 $COIN Coins
-Here! I found some water, but hmmm can i swim?
+Here! I found some water, But Hmmm can I swim?
 EOF
 # Using read to pause.
 read kk
