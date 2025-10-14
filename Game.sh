@@ -3543,7 +3543,7 @@ cat << EOF
               
                    
                            o
-                          -X-Cold brR--v
+                          -X-Cold BrR--v
 ...........................t,,,,,,,,,,,,,,
 $BOBS_HEALTH Mana
 $COIN Coins
