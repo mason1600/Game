@@ -3529,11 +3529,11 @@ cat << EOF
               
                    
         Scuba Helm off-->  o
-                          -X-Cold brr--v
+                          -X-Cold Brr--v
 ...........................t,,,,,,,,,,,,,,
 $BOBS_HEALTH Mana
 $COIN Coins
-Actually the water just touched my toe and its very cold!
+Actually The Water Just Touched My Toe And Its VeRy ColD!
 I dont feel like taking a dip into that today!
 EOF
 # Using read to pause.
@@ -3543,12 +3543,12 @@ cat << EOF
               
                    
                            o
-                          -X-Cold brr--v
+                          -X-Cold brR--v
 ...........................t,,,,,,,,,,,,,,
 $BOBS_HEALTH Mana
 $COIN Coins
 Maybe the ferry man will take me across?
-ohhhhhhh ferrry mannn...
+OhHhHhHh FerRry manNn...
 EOF
 # Using read to pause.
 read oo
