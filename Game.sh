@@ -3452,7 +3452,7 @@ cat << EOF
 .........t..................
 $BOBS_HEALTH Mana
 $COIN Coins
-Well I am either alive or dead at this point lol.
+Well I Am Either Alive Or Dead At This Point LoL.
 Still gotta find a large body of water...
 EOF
 # Using read to pause.
