@@ -3552,6 +3552,19 @@ OhHhHhHh FerRry manNn...
 EOF
 # Using read to pause.
 read oo
+# The cat command used again.
+cat << EOF
+                                  . <-hi im the ferry man
+                                 -x-_______
+                           o     j_j_|__|_|_  
+                          -X-        |__| 
+...........................t,,,,,,,,,|,,|,,,
+$BOBS_HEALTH Mana
+$COIN Coins
+Oh its the ferry man! Nice, he will help.
+EOF
+# Using read to pause.
+read pp
 }
 # This calls level9 function containing all of level nine.
 level9
