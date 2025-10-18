@@ -3554,7 +3554,7 @@ EOF
 read oo
 # The cat command used again.
 cat << EOF
-                                  . <-hi im the ferry man
+                                  . <-HI im the ferry man
                                  -x-_______
                            o     j_j_|__|_|_  
                           -X-        |__| 
