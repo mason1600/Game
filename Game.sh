@@ -3561,7 +3561,7 @@ cat << EOF
 ...........................t,,,,,,,,,|,,|,,,
 $BOBS_HEALTH Mana
 $COIN Coins
-Oh its the ferry man! Nice, he will help.
+Oh Its The Ferry Man! Nice, He Will Help.
 EOF
 # Using read to pause.
 read pp
