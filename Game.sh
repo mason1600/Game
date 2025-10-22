@@ -3567,7 +3567,7 @@ EOF
 read pp
 # The cat command used again.
 cat << EOF
-                                  .         o
+                             :)   .         o
                                  -x-_______-X-
                                  j_j_|__|_|_t_  
                                      |__| 
