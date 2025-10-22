@@ -3587,7 +3587,7 @@ cat << EOF
 ............................,,,,,,,,,|,,|,,,
 $BOBS_HEALTH Mana
 $COIN Coins
-No Idea lol.
+No Idea Lol.
 EOF
 # Using read to pause.
 read rr
