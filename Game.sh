@@ -3574,7 +3574,7 @@ cat << EOF
 ............................,,,,,,,,,|,,|,,,
 $BOBS_HEALTH Mana
 $COIN Coins
-Woot where are we going Now??
+Woot Where Are We Going Now??
 EOF
 # Using read to pause.
 read pp
