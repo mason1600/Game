@@ -3577,7 +3577,20 @@ $COIN Coins
 Woot Where Are We Going Now??
 EOF
 # Using read to pause.
-read pp
+read qq
+# The cat command used again.
+cat << EOF
+                                  .         o
+                                 -x-_______-X-
+                                 j_j_|__|_|_t_  
+                                     |__| 
+............................,,,,,,,,,|,,|,,,
+$BOBS_HEALTH Mana
+$COIN Coins
+No Idea lol.
+EOF
+# Using read to pause.
+read rr
 }
 # This calls level9 function containing all of level nine.
 level9
